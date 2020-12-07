@@ -1,0 +1,23 @@
+<template>
+	<lightning-card title="Degree Programs">
+		<div class="slds-card__body_inner">
+			<template if:true={programs.data}>
+				<lightning-layout multiple-rows="true" pull-to-boundary="small">
+					<template for:each={programs.data} for:item="program">
+						<lightning-layout-item key={program.Id} size="3" class="slds-var-p-around_x-small">
+							<lightning-card title={program.School_Name__c}>
+								<div class="slds-var-p-horizontal_small bear-tile-body">
+									<p class="slds-var-m-bottom_xx-small">Degree:
+										{program.hed__Account__r.Name}</p>
+									<p class="slds-var-m-bottom_xx-small">Start Date: {program.hed__Start_Date__c}</p>
+									<p class="slds-var-m-bottom_xx-small">End Date: {program.hed__End_Date__c}</p>
+									<p class="slds-var-m-bottom_xx-small">GPA: {program.hed__GPA__c}</p>
+								</div>
+							</lightning-card>
+						</lightning-layout-item>
+					</template>
+				</lightning-layout>
+			</template>
+		</div>
+	</lightning-card>
+</template>
