@@ -1,11 +1,20 @@
 <template>
-    <lightning-card title={program.School_Name__c}>
-        <div class="slds-var-p-horizontal_small bear-tile-body">
-            <p class="slds-var-m-bottom_xx-small">Degree:
-                {program.Program_Name__c}</p>
-            <p class="slds-var-m-bottom_xx-small">Start Date: {program.hed__Start_Date__c}</p>
-            <p class="slds-var-m-bottom_xx-small">End Date: {program.hed__End_Date__c}</p>
-            <p class="slds-var-m-bottom_xx-small">GPA: {program.hed__GPA__c}</p>
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span>{program.Program_Name__c}</span>
+                    </h2>
+                </div>
+            </header>
         </div>
-    </lightning-card>
+        <div class="slds-card__body slds-card__body_inner">{program.School_Name__c}</div>
+        <div class="slds-card__body slds-card__body_inner">Start Date: {program.hed__Start_Date__c}</div>
+        <div class="slds-card__body slds-card__body_inner">End Date: {program.hed__End_Date__c}</div>
+        <div class="slds-card__body slds-card__body_inner"><span>GPA: </span> 
+            <lightning-formatted-number value={program.hed__GPA__c} format-style="decimal" minimum-fraction-digits="3">
+                </lightning-formatted-number>
+        </div>
+    </article>
 </template>

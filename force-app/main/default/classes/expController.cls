@@ -34,7 +34,7 @@ public with sharing class expController {
             SELECT  
                 Id,
                 Exam_Name__c,
-                Issuing_Organization__c,
+                Organization__c,
                 hed__Test_Date__c
             FROM hed__Test__c
             WHERE hed__Test_Type__c = 'Skills Assessment'
