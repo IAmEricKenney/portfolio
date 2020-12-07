@@ -6,7 +6,7 @@ public with sharing class expController {
                 Id,
                 hed__End_Date__c,
                 hed__GPA__c,
-                hed__Account__c,
+                Program_Name__c,
                 hed__Start_Date__c,
                 School_Name__c
             FROM hed__Program_Enrollment__c

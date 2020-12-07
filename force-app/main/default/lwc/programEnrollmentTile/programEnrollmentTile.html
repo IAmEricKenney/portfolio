@@ -1,11 +1,11 @@
 <template>
-    <lightning-card title={programs.hed__Account__r.ParentId.ParentId.Name}>
-            <div class="slds-var-p-horizontal_small">
-                <p class="slds-var-m-bottom_xx-small">Degree: {programs.hed__Account__r.ParentId.Name}</p>
-                <p class="slds-var-m-bottom_xx-small">Start Date: {programs.hed__Start_Date__c}</p>
-                <p class="slds-var-m-bottom_xx-small">End Date: {programs.hed__End_Date__c}</p>
-                <p class="slds-var-m-bottom_xx-small">GPA: {programs.hed__GPA__c}</p>
-            </div>
+    <lightning-card title={program.School_Name__c}>
+        <div class="slds-var-p-horizontal_small bear-tile-body">
+            <p class="slds-var-m-bottom_xx-small">Degree:
+                {program.Program_Name__c}</p>
+            <p class="slds-var-m-bottom_xx-small">Start Date: {program.hed__Start_Date__c}</p>
+            <p class="slds-var-m-bottom_xx-small">End Date: {program.hed__End_Date__c}</p>
+            <p class="slds-var-m-bottom_xx-small">GPA: {program.hed__GPA__c}</p>
         </div>
     </lightning-card>
 </template>
