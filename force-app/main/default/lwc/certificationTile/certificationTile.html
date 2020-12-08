@@ -1,11 +1,13 @@
 <template>
-    <ul class="slds-has-dividers_bottom-space">
-        <li class="slds-item">
-            <lightning-tile label={cert.Exam_Name__c} href={cert.Certification_URL__c}>
-                <p class="slds-truncate" title="Test Date">{cert.Organization__c}</p>
-                <p class="slds-truncate" title="Test Date">Test Date: {cert.hed__Test_Date__c}</p>
-                <p class="slds-truncate" title="Credential ID">Credential ID: {cert.Credential_ID__c}</p>
-            </lightning-tile>
-        </li>
-    </ul>
+        <lightning-tile class="slds-var-p-around_x-small">
+            <ul class="slds-has-dividers_bottom-space">
+                <li class="slds-item">
+                    <lightning-tile label={cert.Exam_Name__c} href={cert.Certification_URL__c}>
+                        <p class="slds-truncate" title="Test Date">{cert.Organization__c}</p>
+                        <p class="slds-truncate" title="Test Date">Test Date: {cert.hed__Test_Date__c}</p>
+                        <p class="slds-truncate" title="Credential ID">Credential ID: {cert.Credential_ID__c}</p>
+                    </lightning-tile>
+                </li>
+            </ul>
+        </lightning-tile>
 </template>
