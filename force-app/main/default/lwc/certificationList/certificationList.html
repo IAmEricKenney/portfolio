@@ -1,43 +1,16 @@
 <template>
-	<article class="slds-card">
-		<div class="slds-card__header slds-grid">
-			<header class="slds-media slds-media_center slds-has-flexi-truncate">
-				<div class="slds-media__figure">
-					<span class="slds-icon_container slds-icon-standard-reward" title="reward">
-						<svg class="slds-icon" aria-hidden="true">
-							<use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#reward"></use>
-						</svg>
-						<span class="slds-assistive-text">reward</span>
-					</span>
-				</div>
-				<div class="slds-media__body">
-					<h2 class="slds-card__header-title">
-						<span>Certifications</span>
-					</h2>
-				</div>
-			</header>
-		</div>
-		<div class="slds-card__body slds-card__body_inner">
-			<ul class="slds-grid slds-wrap slds-grid_pull-padded">
-				<li class="slds-var-p-horizontal_small slds-size_1-of-1 slds-medium-size_3-of-3">
-					<article class="slds-tile slds-media slds-card__tile slds-hint-parent">
-						<div class="slds-media__body">
-							<div class="slds-card__body_inner">
-								<template if:true={certs.data}>
-									<lightning-layout multiple-rows="false" pull-to-boundary="small">
-										<template for:each={certs.data} for:item="cert">
-											<lightning-layout-item key={cert.Id} size="12"
-												class="slds-var-p-around_x-small">
-												<c-certification-tile cert={cert}></c-certification-tile>
-											</lightning-layout-item>
-										</template>
-									</lightning-layout>
-								</template>
-							</div>
-						</div>
-					</article>
-				</li>
-			</ul>
-		</div>
-	</article>
+	<lightning-card>
+		<h2 slot="title">
+			<lightning-icon icon-name="standard:reward" alternative-text="Reward" title="Reward"></lightning-icon>
+			&nbsp;&nbsp;&nbsp;<a href="https://trailhead.salesforce.com/credentials/certification-detail-print?searchString=bC3bFnNGSWqeaoZzy3YiSckbsshqemEO+R9AkyVgZJYOABVKbeLCrY9P/fUMd363" target="_blank" rel="noreferrer noopener">
+				Certifications</a>
+		</h2>
+		<template if:true={certs.data}>
+			<template for:each={certs.data} for:item="cert">
+				<lightning-layout-item key={cert.Id} size="12" class="slds-var-p-around_x-small">
+					<c-certification-tile cert={cert}></c-certification-tile>
+				</lightning-layout-item>
+			</template>
+		</template>
+	</lightning-card>
 </template>

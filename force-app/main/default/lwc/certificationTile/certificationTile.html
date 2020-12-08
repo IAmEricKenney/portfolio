@@ -1,16 +1,11 @@
 <template>
-    <article class="slds-card">
-        <div class="slds-card__header slds-grid">
-            <header class="slds-media slds-media_center slds-has-flexi-truncate">
-                <div class="slds-media__body">
-                    <h2 class="slds-card__header-title">
-                        <span>{cert.Exam_Name__c}</span>
-                    </h2>
-                </div>
-            </header>
-        </div>
-        <div class="slds-card__body slds-card__body_inner">Organization: {cert.Organization__c}</div>
-        <div class="slds-card__body slds-card__body_inner">Test Date: {cert.hed__Test_Date__c}</div>
-        <div class="slds-card__body slds-card__body_inner">Credential ID: {cert.Credential_ID__c}</div>
-    </article>
+    <ul class="slds-has-dividers_bottom-space">
+        <li class="slds-item">
+            <lightning-tile label={cert.Exam_Name__c}>
+                <p class="slds-truncate" title="Test Date">{cert.Organization__c}</p>
+                <p class="slds-truncate" title="Test Date">Test Date: {cert.hed__Test_Date__c}</p>
+                <p class="slds-truncate" title="Credential ID">Credential ID: {cert.Credential_ID__c}</p>
+            </lightning-tile>
+        </li>
+    </ul>
 </template>

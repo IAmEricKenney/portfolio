@@ -8,7 +8,8 @@ public with sharing class expController {
                 hed__GPA__c,
                 Program_Name__c,
                 hed__Start_Date__c,
-                School_Name__c
+                School_Name__c,
+                Program_URL__c
             FROM hed__Program_Enrollment__c
             ORDER BY hed__End_Date__c DESC
         ];
@@ -22,7 +23,9 @@ public with sharing class expController {
                 Exam_Name__c,
                 Organization__c,
                 hed__Test_Date__c,
-                Credential_ID__c
+                Credential_ID__c,
+                Certification_URL__c,
+                Asset_URL__c
             FROM hed__Test__c
             WHERE hed__Test_Type__c = 'Professional Certification'
             ORDER BY hed__Test_Date__c DESC
@@ -35,7 +38,9 @@ public with sharing class expController {
                 Id,
                 Exam_Name__c,
                 Organization__c,
-                hed__Test_Date__c
+                hed__Test_Date__c,
+                Certification_URL__c,
+                Asset_URL__c
             FROM hed__Test__c
             WHERE hed__Test_Type__c = 'Skills Assessment'
             ORDER BY hed__Test_Date__c DESC

@@ -1,43 +1,16 @@
 <template>
-	<article class="slds-card">
-		<div class="slds-card__header slds-grid">
-			<header class="slds-media slds-media_center slds-has-flexi-truncate">
-				<div class="slds-media__figure">
-					<span class="slds-icon_container slds-icon-standard-trailhead" title="trailhead">
-						<svg class="slds-icon" aria-hidden="true">
-							<use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#trailhead"></use>
-						</svg>
-						<span class="slds-assistive-text">trailhead</span>
-					</span>
-				</div>
-				<div class="slds-media__body">
-					<h2 class="slds-card__header-title">
-						<span>Salesforce Superbadges</span>
-					</h2>
-				</div>
-			</header>
-		</div>
-		<div class="slds-card__body slds-card__body_inner">
-			<ul class="slds-grid slds-wrap slds-grid_pull-padded">
-				<li class="slds-var-p-horizontal_small slds-size_1-of-1 slds-medium-size_3-of-3">
-					<article class="slds-tile slds-media slds-card__tile slds-hint-parent">
-						<div class="slds-media__body">
-							<div class="slds-card__body_inner">
-								<template if:true={skills.data}>
-									<lightning-layout multiple-rows="false" pull-to-boundary="small">
-										<template for:each={skills.data} for:item="skill">
-											<lightning-layout-item key={skill.Id} size="12"
-												class="slds-var-p-around_x-small">
-												<c-skills-tile skill={skill}></c-skills-tile>
-											</lightning-layout-item>
-										</template>
-									</lightning-layout>
-								</template>
-							</div>
-						</div>
-					</article>
-				</li>
-			</ul>
-		</div>
-	</article>
+	<lightning-card>
+		<h2 slot="title">
+			<lightning-icon icon-name="standard:trailhead" alternative-text="Trailhead" title="Trailhead"></lightning-icon>
+			&nbsp;&nbsp;&nbsp;<a href="https://trailblazer.me/id/iamerickenney" target="_blank" rel="noreferrer noopener">
+				Salesforce Superbadges</a>
+		</h2>
+		<template if:true={skills.data}>
+			<template for:each={skills.data} for:item="skill">
+				<lightning-layout-item key={skill.Id} size="12" class="slds-var-p-around_x-small">
+					<c-skills-tile skill={skill}></c-skills-tile>
+				</lightning-layout-item>
+			</template>
+		</template>
+	</lightning-card>
 </template>
