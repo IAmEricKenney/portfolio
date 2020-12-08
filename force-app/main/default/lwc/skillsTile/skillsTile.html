@@ -1,7 +1,7 @@
 <template>
     <ul class="slds-has-dividers_bottom-space">
         <li class="slds-item">
-            <lightning-tile label={skill.Exam_Name__c}>
+            <lightning-tile label={skill.Exam_Name__c} href={skill.Certification_URL__c}>
                 <p class="slds-truncate" title="Organization">{skill.Organization__c}</p>
                 <p class="slds-truncate" title="Test Date">Test Date: {skill.hed__Test_Date__c}</p>
             </lightning-tile>
