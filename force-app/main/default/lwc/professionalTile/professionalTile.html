@@ -2,9 +2,9 @@
     <lightning-tile class="slds-var-p-around_x-small">
         <ul class="slds-has-dividers_bottom-space">
             <li class="slds-item">
-                <lightning-tile label={professional.Title__c}>
-                    <p class="slds-truncate" title="Organization">{professional.Organization__c}</p>
-                    <p class="slds-truncate" title="Work Dates">{dateRangeString}</p>
+                <lightning-tile>
+                    <h2 class="slds-truncate" title="Title">{professional.Title__c} {dateRangeString}</h2>
+                    <p class="slds-truncate" title="Organization">{professional.Organization_Name__c}</p>
                 </lightning-tile>
             </li>
         </ul>
