@@ -53,13 +53,14 @@ public with sharing class expController {
                 Id,
                 Description__c,
                 End_Date__c,
-                Organization__c,
+                Organization_Name__c,
                 Start_Date__c,
                 Title__c,
-                To_Present__c  
+                To_Present__c,
+                Sort_Order__c 
             FROM Experience__c
-            WHERE Experience__c.RecordTypeId = '0123h000000HxFZAA0'
-            ORDER BY End_Date__c DESC
+            WHERE Sort_Order__c < 100
+            ORDER BY Sort_Order__c DESC
         ];
     }
     @AuraEnabled(Cacheable=true)
@@ -69,13 +70,14 @@ public with sharing class expController {
                 Id,
                 Description__c,
                 End_Date__c,
-                Organization__c,
+                Organization_Name__c,
                 Start_Date__c,
                 Title__c,
-                To_Present__c  
+                To_Present__c,
+                Sort_Order__c  
             FROM Experience__c
-            WHERE Experience__c.RecordTypeId = '0123h000000HxFeAAK'
-            ORDER BY End_Date__c DESC
+            WHERE Sort_Order__c > 100
+            ORDER BY Sort_Order__c DESC
         ];
     }
 }

@@ -1,0 +1,17 @@
+<template>
+	<lightning-card>
+        <h2 slot="title">
+            <lightning-icon icon-name="standard:trailhead" alternative-text="Trailhead" title="Trailhead">
+            </lightning-icon>
+            &nbsp;&nbsp;&nbsp;
+                Professional Experience
+        </h2>
+        <template if:true={profexps.data}>
+            <template for:each={profexps.data} for:item="profexp">
+                <lightning-layout-item key={profexp.Id} size="12" class="slds-var-p-around_x-small">
+                    <c-professional-tile profexp={profexp}></c-professional-tile>
+                </lightning-layout-item>
+            </template>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-tile class="slds-var-p-around_x-small">
+        <ul class="slds-has-dividers_bottom-space">
+            <li class="slds-item">
+                <lightning-tile label={professional.Title__c}>
+                    <p class="slds-truncate" title="Organization">{professional.Organization__c}</p>
+                    <p class="slds-truncate" title="Work Dates">{dateRangeString}</p>
+                </lightning-tile>
+            </li>
+        </ul>
+    </lightning-tile>
+</template>
