@@ -55,9 +55,9 @@ public with sharing class expController {
                 End_Date__c,
                 Organization_Name__c,
                 Start_Date__c,
-                Title__c,
                 To_Present__c,
-                Sort_Order__c 
+                Sort_Order__c,
+                Job_Title__c
             FROM Experience__c
             WHERE Sort_Order__c < 100 AND To_Present__c = TRUE
             ORDER BY Sort_Order__c DESC
@@ -72,9 +72,9 @@ public with sharing class expController {
                 End_Date__c,
                 Organization_Name__c,
                 Start_Date__c,
-                Title__c,
                 To_Present__c,
-                Sort_Order__c 
+                Sort_Order__c,
+                Job_Title__c
             FROM Experience__c
             WHERE Sort_Order__c < 100 AND To_Present__c = FALSE
             ORDER BY Sort_Order__c DESC
@@ -89,9 +89,9 @@ public with sharing class expController {
                 End_Date__c,
                 Organization_Name__c,
                 Start_Date__c,
-                Title__c,
                 To_Present__c,
-                Sort_Order__c  
+                Sort_Order__c,
+                Job_Title__c 
             FROM Experience__c
             WHERE Sort_Order__c > 100
             ORDER BY Sort_Order__c DESC
