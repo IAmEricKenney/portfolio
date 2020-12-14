@@ -47,7 +47,7 @@ public with sharing class expController {
         ];
     }
     @AuraEnabled(Cacheable=true)
-    public static Experience__c[] getAllProfExp(){
+    public static Experience__c[] getPresentProfExp(){
         return [
             SELECT
                 Id,
@@ -59,7 +59,24 @@ public with sharing class expController {
                 To_Present__c,
                 Sort_Order__c 
             FROM Experience__c
-            WHERE Sort_Order__c < 100
+            WHERE Sort_Order__c < 100 AND To_Present__c = TRUE
+            ORDER BY Sort_Order__c DESC
+        ];
+    }
+    @AuraEnabled(Cacheable=true)
+    public static Experience__c[] getPastProfExp(){
+        return [
+            SELECT
+                Id,
+                Description__c,
+                End_Date__c,
+                Organization_Name__c,
+                Start_Date__c,
+                Title__c,
+                To_Present__c,
+                Sort_Order__c 
+            FROM Experience__c
+            WHERE Sort_Order__c < 100 AND To_Present__c = FALSE
             ORDER BY Sort_Order__c DESC
         ];
     }
