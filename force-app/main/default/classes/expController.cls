@@ -56,10 +56,9 @@ public with sharing class expController {
                 Organization_Name__c,
                 Start_Date__c,
                 To_Present__c,
-                Sort_Order__c,
                 Job_Title__c
             FROM Experience__c
-            WHERE Sort_Order__c < 100 AND To_Present__c = TRUE
+            WHERE RecordTypeId = '0123h000000HxFZAA0' AND To_Present__c = TRUE
             ORDER BY Sort_Order__c DESC
         ];
     }
@@ -73,10 +72,9 @@ public with sharing class expController {
                 Organization_Name__c,
                 Start_Date__c,
                 To_Present__c,
-                Sort_Order__c,
                 Job_Title__c
             FROM Experience__c
-            WHERE Sort_Order__c < 100 AND To_Present__c = FALSE
+            WHERE RecordTypeId = '0123h000000HxFZAA0' AND To_Present__c = FALSE
             ORDER BY Sort_Order__c DESC
         ];
     }
@@ -90,10 +88,9 @@ public with sharing class expController {
                 Organization_Name__c,
                 Start_Date__c,
                 To_Present__c,
-                Sort_Order__c,
-                Job_Title__c 
+                Job_Title__c
             FROM Experience__c
-            WHERE Sort_Order__c > 100
+            WHERE RecordTypeId = '0123h000000HxFeAAK'
             ORDER BY Sort_Order__c DESC
         ];
     }
