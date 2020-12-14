@@ -3,7 +3,7 @@
         <ul class="slds-has-dividers_bottom-space">
             <li class="slds-item">
                 <lightning-card>
-                    <lightning-formatted-text value={presprofs.Job_Title__c} style="font-size: larger;"></lightning-formatted-text>
+                    <lightning-formatted-text style="font-size: larger;">{presprofs.Job_Title__c}</lightning-formatted-text>
                     <p class="slds-truncate" title="Time Employed">{presprofs.Start_Date__c} to
                         {pastprofs.End_Date__c}</p>
                     <p class="slds-truncate" title="Organization">{presprofs.Organization_Name__c}</p>
