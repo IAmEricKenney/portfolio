@@ -47,6 +47,22 @@ public with sharing class expController {
         ];
     }
     @AuraEnabled(Cacheable=true)
+    public static Experience__c[] getAllProfExp(){
+        return [
+            SELECT
+                Id,
+                Description__c,
+                End_Date__c,
+                Organization_Name__c,
+                Start_Date__c,
+                To_Present__c,
+                Job_Title__c
+            FROM Experience__c
+            WHERE RecordTypeId = '0123h000000HxFZAA0'
+            ORDER BY Sort_Order__c DESC
+        ];
+    }
+    @AuraEnabled(Cacheable=true)
     public static Experience__c[] getPresentProfExp(){
         return [
             SELECT

@@ -1,24 +1,15 @@
 <template>
 	<lightning-card>
-        <h2 slot="title">
-            <lightning-icon icon-name="standard:job_profile" alternative-text="job_profile" title="job_profile">
-            </lightning-icon>
-            &nbsp;&nbsp;&nbsp;
-                Professional Experience
-        </h2>
-        <template if:true={presprofs.data}>
-            <template for:each={presprofs.data} for:item="presprof">
-                <lightning-layout-item key={presprof.Id} size="12" class="slds-var-p-around_x-small">
-                    <c-professional-present-tile presprof={presprof}></c-professional-present-tile>
-                </lightning-layout-item>
-            </template>
-        </template>
-        <template if:true={pastprofs.data}>
-            <template for:each={pastprofs.data} for:item="pastprof">
-                <lightning-layout-item key={pastprof.Id} size="12" class="slds-var-p-around_x-small">
-                    <c-professional-past-tile pastprof={pastprof}></c-professional-past-tile>
-                </lightning-layout-item>
-            </template>
-        </template>
-    </lightning-card>
+		<h2 slot="title">
+			<lightning-icon icon-name="standard:job_profile" alternative-text="Job Profile" title="Job Profile"></lightning-icon>
+			&nbsp;&nbsp;&nbsp;Professional Experience
+		</h2>
+		<template if:true={profexps.data}>
+			<template for:each={profexps.data} for:item="profexp">
+				<lightning-layout-item key={profexp.Id} size="12" class="slds-var-p-around_x-small">
+					<c-professional-tile profexp={profexp}></c-professional-tile>
+				</lightning-layout-item>
+			</template>
+		</template>
+	</lightning-card>
 </template>

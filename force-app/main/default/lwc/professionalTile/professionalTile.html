@@ -1,0 +1,12 @@
+<template>
+    <lightning-tile class="slds-var-p-around_x-small">
+        <ul class="slds-has-dividers_bottom-space">
+            <li class="slds-item">
+                <div class="slds-text-heading_medium" title="Job Title">{profexp.Job_Title__c}</div>
+                <div class="slds-text-heading_small" title="Employer">{profexp.Organization_Name__c}</div>
+                <div class="slds-text-heading_small" title="Dates Employed">{profexp.Start_Date__c} to {profexp.End_Date__c}</div>
+                <lightning-formatted-rich-text value={profexp.Description__c}></lightning-formatted-rich-text>
+            </li>
+        </ul>
+    </lightning-tile>
+</template>

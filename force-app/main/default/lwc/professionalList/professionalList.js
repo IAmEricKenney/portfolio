@@ -1,8 +1,6 @@
-import { LightningElement, wire } from 'lwc';
-import getPastProfExp from '@salesforce/apex/expController.getPastProfExp';
-import getPresentProfExp from '@salesforce/apex/expController.getPresentProfExp';
+import { LightningElement, api, wire } from 'lwc';
+import getAllProfExp from '@salesforce/apex/expController.getAllProfExp';
 
 export default class ProfessionalList extends LightningElement {
-    @wire (getPastProfExp) pastprofs;
-    @wire (getPresentProfExp) presprofs;
+    @wire(getAllProfExp) profexps;
 }
