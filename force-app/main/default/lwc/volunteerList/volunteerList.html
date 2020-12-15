@@ -7,7 +7,7 @@
 		<template if:true={volexps.data}>
 			<template for:each={volexps.data} for:item="volexp">
 				<lightning-layout-item key={volexp.Id} size="12" class="slds-var-p-around_x-small">
-					<c-volunteer-tile profexp={volexp}></c-volunteer-tile>
+					<c-volunteer-tile volexp={volexp}></c-volunteer-tile>
 				</lightning-layout-item>
 			</template>
 		</template>

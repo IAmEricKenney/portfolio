@@ -55,42 +55,9 @@ public with sharing class expController {
                 End_Date__c,
                 Organization_Name__c,
                 Start_Date__c,
-                To_Present__c,
                 Job_Title__c
             FROM Experience__c
             WHERE RecordTypeId = '0123h000000HxFZAA0'
-            ORDER BY Sort_Order__c DESC
-        ];
-    }
-    @AuraEnabled(Cacheable=true)
-    public static Experience__c[] getPresentProfExp(){
-        return [
-            SELECT
-                Id,
-                Description__c,
-                End_Date__c,
-                Organization_Name__c,
-                Start_Date__c,
-                To_Present__c,
-                Job_Title__c
-            FROM Experience__c
-            WHERE RecordTypeId = '0123h000000HxFZAA0' AND To_Present__c = TRUE
-            ORDER BY Sort_Order__c DESC
-        ];
-    }
-    @AuraEnabled(Cacheable=true)
-    public static Experience__c[] getPastProfExp(){
-        return [
-            SELECT
-                Id,
-                Description__c,
-                End_Date__c,
-                Organization_Name__c,
-                Start_Date__c,
-                To_Present__c,
-                Job_Title__c
-            FROM Experience__c
-            WHERE RecordTypeId = '0123h000000HxFZAA0' AND To_Present__c = FALSE
             ORDER BY Sort_Order__c DESC
         ];
     }
@@ -99,11 +66,9 @@ public with sharing class expController {
         return [
             SELECT
                 Id,
-                Description__c,
                 End_Date__c,
                 Organization_Name__c,
                 Start_Date__c,
-                To_Present__c,
                 Job_Title__c
             FROM Experience__c
             WHERE RecordTypeId = '0123h000000HxFeAAK'
