@@ -4,11 +4,12 @@ public with sharing class expController {
         return [
             SELECT
                 Id,
-                hed__End_Date__c,
+                hed__Account__r.Name,
+                hed__Account__r.Parent.Parent.Name,
+                hed__Account__r.Parent.Parent.Website,
                 hed__GPA__c,
-                Program_Name__c,
                 hed__Start_Date__c,
-                School_Name__c,
+                hed__End_Date__c,
                 Program_URL__c
             FROM hed__Program_Enrollment__c
             ORDER BY hed__End_Date__c DESC
@@ -21,10 +22,10 @@ public with sharing class expController {
             SELECT  
                 Id,
                 Exam_Name__c,
-                Organization__c,
                 hed__Test_Date__c,
                 Credential_ID__c,
                 Certification_URL__c,
+                Issuing_Organization__r.Name,
                 Asset_URL__c
             FROM hed__Test__c
             WHERE hed__Test_Type__c = 'Professional Certification'
@@ -37,9 +38,9 @@ public with sharing class expController {
             SELECT  
                 Id,
                 Exam_Name__c,
-                Organization__c,
                 hed__Test_Date__c,
                 Certification_URL__c,
+                Issuing_Organization__r.Name,
                 Asset_URL__c
             FROM hed__Test__c
             WHERE hed__Test_Type__c = 'Skills Assessment'
@@ -53,9 +54,10 @@ public with sharing class expController {
                 Id,
                 Description__c,
                 End_Date__c,
-                Organization_Name__c,
                 Start_Date__c,
-                Job_Title__c
+                Job_Title__c,
+                Organization__r.Name,
+                Organization__r.Website
             FROM Experience__c
             WHERE RecordTypeId = '0123h000000HxFZAA0'
             ORDER BY Sort_Order__c DESC
@@ -67,9 +69,10 @@ public with sharing class expController {
             SELECT
                 Id,
                 End_Date__c,
-                Organization_Name__c,
                 Start_Date__c,
-                Job_Title__c
+                Job_Title__c,
+                Organization__r.Name,
+                Organization__r.Website
             FROM Experience__c
             WHERE RecordTypeId = '0123h000000HxFeAAK'
             ORDER BY Sort_Order__c DESC
