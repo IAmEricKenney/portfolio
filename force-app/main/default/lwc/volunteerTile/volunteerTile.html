@@ -1,11 +1,12 @@
 <template>
-    <lightning-tile class="slds-var-p-around_x-small">
-        <ul class="slds-has-dividers_bottom-space">
-            <li class="slds-item">
-                <div class="slds-text-heading_medium" title="Role">{volexp.Job_Title__c}</div>
-                <div class="slds-text-heading_small" title="Organization">{volexp.Organization_Name__c}</div>
-                <div class="slds-text-heading_small" title="Volunteer Dates">{volexp.Start_Date__c} to {volexp.End_Date__c}</div>
-            </li>
-        </ul>
-    </lightning-tile>
+    <ul class="slds-has-dividers_around-space">
+        <li class="slds-item">
+            <article class="slds-tile slds-tile_board">
+                <p class="slds-text-heading_small" title="Role">{volexp.Job_Title__c}</p>
+                <p class="slds-truncate" title="Organization"><a href={volexp.Organization__r.Website}
+                        target="_blank">{volexp.Organization__r.Name}</a>&nbsp;{volexp.Start_Date__c} to
+                    {volexp.End_Date__c}</p>
+            </article>
+        </li>
+    </ul>
 </template>

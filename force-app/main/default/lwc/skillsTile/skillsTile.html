@@ -1,12 +1,12 @@
 <template>
-    <lightning-tile class="slds-var-p-around_x-small">
-        <ul class="slds-has-dividers_bottom-space">
-            <li class="slds-item">
-                <lightning-tile label={skill.Exam_Name__c} href={skill.Certification_URL__c}>
-                    <p class="slds-truncate" title="Organization">{skill.Organization__c}</p>
-                    <p class="slds-truncate" title="Test Date">Test Date: {skill.hed__Test_Date__c}</p>
-                </lightning-tile>
-            </li>
-        </ul>
-    </lightning-tile>
+    <ul class="slds-has-dividers_around-space">
+        <li class="slds-item">
+            <article class="slds-tile slds-tile_board">
+                <p class="slds-text-heading_small" title="Exam Name"><a href={skill.Certification_URL__c}
+                        target="_blank">{skill.Exam_Name__c}</a></p>
+                <p class="slds-truncate" title="Organization">{skill.Issuing_Organization__r.Name}</p>
+                <p class="slds-truncate" title="Test Date">Test Date: {skill.hed__Test_Date__c}</p>
+            </article>
+        </li>
+    </ul>
 </template>

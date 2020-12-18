@@ -1,17 +1,24 @@
 <template>
-	<lightning-card>
-	<h2 slot="title">
-		<lightning-icon icon-name="standard:trailhead" alternative-text="Trailhead" title="Trailhead">
-		</lightning-icon>
-		&nbsp;&nbsp;&nbsp;<a href="https://trailblazer.me/id/iamerickenney" target="_blank" rel="noreferrer noopener">
-			Salesforce Superbadges</a>
-	</h2>
-	<template if:true={skills.data}>
-		<template for:each={skills.data} for:item="skill">
-			<lightning-layout-item key={skill.Id} size="12" class="slds-var-p-around_x-small">
-				<c-skills-tile skill={skill}></c-skills-tile>
-			</lightning-layout-item>
-		</template>
-	</template>
-</lightning-card>
+	<article class="slds-card">
+		<div class="slds-card__header slds-grid">
+			<header class="slds-media slds-media_center slds-has-flexi-truncate">
+				<div class="slds-media__body">
+					<h2 class="slds-card__header-title">
+						<lightning-icon icon-name="standard:trailhead" alternative-text="Trailhead" title="Trailhead">
+						</lightning-icon>
+						&nbsp;&nbsp;&nbsp;<a href="https://trailblazer.me/id/iamerickenney" target="_blank"
+							rel="noreferrer noopener">
+							Salesforce Superbadges</a>
+					</h2>
+					<template if:true={skills.data}>
+						<template for:each={skills.data} for:item="skill">
+							<lightning-layout-item key={skill.Id} size="12" class="slds-var-p-around_x-small">
+								<c-skills-tile skill={skill}></c-skills-tile>
+							</lightning-layout-item>
+						</template>
+					</template>
+				</div>
+			</header>
+		</div>
+	</article>
 </template>

@@ -1,18 +1,21 @@
 <template>
-    <lightning-tile class="slds-var-p-around_x-small">
-        <ul class="slds-has-dividers_bottom-space">
-            <li class="slds-item">
-                <lightning-tile label={program.Program_Name__c} href={program.Program_URL__c}>
-                    <p class="slds-truncate" title="School">{program.School_Name__c}</p>
-                    <p class="slds-truncate" title="Start Date">Start Date: {program.hed__Start_Date__c}</p>
-                    <p class="slds-truncate" title="End Date">End Date: {program.hed__End_Date__c}</p>
-                    <div class="slds-truncate" title="GPA">GPA:&nbsp;
-                        <lightning-formatted-number value={program.hed__GPA__c} format-style="decimal"
-                            minimum-fraction-digits="3">
-                        </lightning-formatted-number>
-                    </div>
-                </lightning-tile>
-            </li>
-        </ul>
-    </lightning-tile>
+    <ul class="slds-has-dividers_around-space">
+        <li class="slds-item">
+            <article class="slds-tile slds-tile_board">
+                <p class="slds-text-heading_small" title="Program Name">
+                    <a href={program.Program_URL__c} target="_blank">
+                        {program.hed__Account__r.Name}</a></p>
+                <p class="slds-truncate" title="School"><a href={program.hed__Account__r.Parent.Parent.Website}
+                        target="_blank">
+                        {program.hed__Account__r.Parent.Parent.Name}</a></p>
+                <p class="slds-truncate" title="Start Date">Start Date: {program.hed__Start_Date__c}</p>
+                <p class="slds-truncate" title="End Date">End Date: {program.hed__End_Date__c}</p>
+                <p class="slds-truncate" title="GPA">GPA:&nbsp;
+                    <lightning-formatted-number value={program.hed__GPA__c} format-style="decimal"
+                        minimum-fraction-digits="3">
+                    </lightning-formatted-number>
+                </p>
+            </article>
+        </li>
+    </ul>
 </template>
