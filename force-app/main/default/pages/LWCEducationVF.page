@@ -1,0 +1,34 @@
+<apex:page showHeader="false" sidebar="false" lightningStyleSheets="true">
+    <apex:includeLightning />
+    <apex:slds />
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_1-of-3" id="LightningPEComponentid" />
+        <div class="slds-col slds-size_1-of-3" id="LightningCertComponentid" />
+        <div class="slds-col slds-size_1-of-3" id="LightningSkillsComponentid" />
+    </div>
+    <script>
+        $Lightning.use("c:LWCLightningOut", function () {
+            $Lightning.createComponent("c:CertificationList",
+                {
+                },
+                "LightningCertComponentid",
+                function (cmp) {
+                    console.log('LWC Certification Componenet added in VF page');
+                });
+            $Lightning.createComponent("c:ProgramEnrollmentList",
+                {
+                },
+                "LightningPEComponentid",
+                function (cmp) {
+                    console.log('LWC Program Enrollment Componenet added in VF page');
+                });
+            $Lightning.createComponent("c:SkillsList",
+                {
+                },
+                "LightningSkillsComponentid",
+                function (cmp) {
+                    console.log('LWC Skills Componenet added in VF page');
+                });
+        });
+    </script>
+</apex:page>
