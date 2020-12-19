@@ -10,7 +10,7 @@ public with sharing class expController {
                 hed__GPA__c,
                 hed__Start_Date__c,
                 hed__End_Date__c,
-                Program_URL__c
+                hed__Account__r.Website
             FROM hed__Program_Enrollment__c
             ORDER BY hed__End_Date__c DESC
         ];
