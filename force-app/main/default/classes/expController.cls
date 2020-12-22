@@ -32,6 +32,17 @@ public with sharing class expController {
             ORDER BY hed__Test_Date__c DESC
         ];
     }
+    @AuraEnabled(cacheable=true)
+    public static List<hed__Test_Score__c> getTestScores(Id testId) {
+        return [
+            SELECT 
+                Subject_Area__c,
+                Score_Percentage__c,
+                Section_Percentage__c
+            FROM hed__Test_Score__c
+            WHERE hed__Test__c = :testId
+       ];
+    }
     @AuraEnabled(Cacheable=true)
     public static hed__Test__c[] getAllSkills(){
         return [
