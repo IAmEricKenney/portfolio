@@ -1,25 +1,36 @@
 <template>
-	<article class="slds-card">
-		<div class="slds-card__header slds-grid">
-			<header class="slds-media slds-media_center slds-has-flexi-truncate">
-				<div class="slds-media__body">
-					<h2 class="slds-card__header-title">
-						<lightning-icon icon-name="standard:reward" alternative-text="Reward" title="Reward">
-						</lightning-icon>
-						&nbsp;&nbsp;&nbsp;<a
-							href="https://trailhead.salesforce.com/credentials/certification-detail-print?searchString=bC3bFnNGSWqeaoZzy3YiSckbsshqemEO+R9AkyVgZJYOABVKbeLCrY9P/fUMd363"
-							target="_blank" rel="noreferrer noopener">
-							Certifications</a>
-					</h2>
-					<template if:true={certs.data}>
-						<template for:each={certs.data} for:item="cert">
-							<lightning-layout-item key={cert.Id} size="12" class="slds-var-p-around_x-small">
-								<c-certification-tile cert={cert}></c-certification-tile>
-							</lightning-layout-item>
-						</template>
-					</template>
-				</div>
-			</header>
-		</div>
-	</article>
+  <article class="slds-card">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__body">
+          <h2 class="slds-card__header-title">
+            <lightning-icon
+              icon-name="standard:reward"
+              alternative-text="Reward"
+              title="Reward"
+            >
+            </lightning-icon>
+            &nbsp;&nbsp;&nbsp;<a
+              href="https://trailhead.salesforce.com/credentials/certification-detail-print?searchString=bC3bFnNGSWqeaoZzy3YiSckbsshqemEO+R9AkyVgZJYOABVKbeLCrY9P/fUMd363"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Certifications</a
+            >
+          </h2>
+          <template if:true={certs.data}>
+            <template for:each={certs.data} for:item="cert">
+              <lightning-layout-item
+                key={cert.Id}
+                size="12"
+                class="slds-var-p-around_x-small"
+              >
+                <c-certification-tile cert={cert}></c-certification-tile>
+              </lightning-layout-item>
+            </template>
+          </template>
+        </div>
+      </header>
+    </div>
+  </article>
 </template>
