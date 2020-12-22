@@ -4,13 +4,13 @@ public with sharing class expController {
     return [
       SELECT
         Id,
-        hed__Account__r.Name,
-        hed__Account__r.Parent.Parent.Name,
-        hed__Account__r.Parent.Parent.Website,
         hed__GPA__c,
         hed__Start_Date__c,
         hed__End_Date__c,
-        hed__Account__r.Website
+        hed__Account__r.Name,
+        hed__Account__r.Website,
+        hed__Account__r.Parent.Parent.Name,
+        hed__Account__r.Parent.Parent.Website
       FROM hed__Program_Enrollment__c
       ORDER BY hed__End_Date__c DESC
     ];
