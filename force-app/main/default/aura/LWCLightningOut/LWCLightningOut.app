@@ -11,5 +11,4 @@
     <aura:dependency resource="VolunteerTile" />
     <aura:dependency resource="ProjectList" />
     <aura:dependency resource="ProjectTile" />
-</aura:application>	
-
+</aura:application>
