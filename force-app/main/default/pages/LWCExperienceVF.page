@@ -2,8 +2,8 @@
   <apex:includeLightning />
   <apex:slds />
   <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_1-of-3" id="LightningProfomponentid" />
     <div class="slds-col slds-size_1-of-3" id="LightningVolComponentid" />
-    <div class="slds-col slds-size_1-of-3" id="LightningProfComponentid" />
     <div class="slds-col slds-size_1-of-3" id="LightningProjComponentid" />
   </div>
   <script>
@@ -11,17 +11,17 @@
       $Lightning.createComponent(
         "c:ProfessionalList",
         {},
-        "LightningVolComponentid",
+        "LightningProfComponentid",
         function (cmp) {
-          console.log("LWC Professional Componenet added in VF page");
+          console.log("LWC Professional Component added in VF page");
         }
       );
       $Lightning.createComponent(
         "c:VolunteerList",
         {},
-        "LightningProfComponentid",
+        "LightningVolComponentid",
         function (cmp) {
-          console.log("LWC Volunteer Componenet added in VF page");
+          console.log("LWC Volunteer Component added in VF page");
         }
       );
       $Lightning.createComponent(
@@ -29,7 +29,7 @@
         {},
         "LightningProjComponentid",
         function (cmp) {
-          console.log("LWC Project Componenet added in VF page");
+          console.log("LWC Project Component added in VF page");
         }
       );
     });

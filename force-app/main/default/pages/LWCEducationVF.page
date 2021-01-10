@@ -13,7 +13,7 @@
         {},
         "LightningCertComponentid",
         function (cmp) {
-          console.log("LWC Certification Componenet added in VF page");
+          console.log("LWC Certification Component added in VF page");
         }
       );
       $Lightning.createComponent(
@@ -21,7 +21,7 @@
         {},
         "LightningPEComponentid",
         function (cmp) {
-          console.log("LWC Program Enrollment Componenet added in VF page");
+          console.log("LWC Program Enrollment Component added in VF page");
         }
       );
       $Lightning.createComponent(
@@ -29,7 +29,7 @@
         {},
         "LightningSkillsComponentid",
         function (cmp) {
-          console.log("LWC Skills Componenet added in VF page");
+          console.log("LWC Skills Component added in VF page");
         }
       );
     });
