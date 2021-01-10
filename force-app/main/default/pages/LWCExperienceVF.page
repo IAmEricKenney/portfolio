@@ -2,7 +2,7 @@
   <apex:includeLightning />
   <apex:slds />
   <div class="slds-grid slds-gutters">
-    <div class="slds-col slds-size_1-of-3" id="LightningProfomponentid" />
+    <div class="slds-col slds-size_1-of-3" id="LightningProfComponentid" />
     <div class="slds-col slds-size_1-of-3" id="LightningVolComponentid" />
     <div class="slds-col slds-size_1-of-3" id="LightningProjComponentid" />
   </div>
