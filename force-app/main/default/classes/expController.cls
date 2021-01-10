@@ -85,4 +85,18 @@ public with sharing class expController {
       ORDER BY Sort_Order__c DESC
     ];
   }
+  @AuraEnabled(Cacheable=true)
+  public static Project__c[] getAllProjects() {
+    return [
+      SELECT
+        Id,
+        Start_Date__c,
+        End_Date__c,
+        Project_URL__c,
+        Description__c,
+        Name
+      FROM Project__c
+      ORDER BY End_Date__c DESC
+    ];
+  }
 }
