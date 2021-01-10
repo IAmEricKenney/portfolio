@@ -9,5 +9,7 @@
     <aura:dependency resource="ProgramEnrollmentList" />
     <aura:dependency resource="VolunteerList" />
     <aura:dependency resource="VolunteerTile" />
+    <aura:dependency resource="ProjectList" />
+    <aura:dependency resource="ProjectTile" />
 </aura:application>	
 
