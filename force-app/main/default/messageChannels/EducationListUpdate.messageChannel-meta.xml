@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
-    <masterLabel>EducationListUpdate</masterLabel>
-    <description>This message is fired when the education list is updated.</description>
-    <lightningMessageFields>
-        <fieldName>eduhist</fieldName>
-        <description>List of education records.</description>
-    </lightningMessageFields>
-</LightningMessageChannel>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <name>assign_Company</name>
+        <label>assign Company</label>
+        <locationX>176</locationX>
+        <locationY>253</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Company</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>forFullName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>update_Lead</targetReference>
+        </connector>
+    </assignments>
+    <formulas>
+        <name>forFullName</name>
+        <dataType>String</dataType>
+        <expression
+    >{!$Record.FirstName} &amp; &quot; &quot; &amp; {!$Record.LastName}</expression>
+    </formulas>
+    <interviewLabel
+  >Lead: Create Company Name {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead: Create Company Name</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>update_Lead</name>
+        <label>update Lead</label>
+        <locationX>176</locationX>
+        <locationY>373</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>assign_Company</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
