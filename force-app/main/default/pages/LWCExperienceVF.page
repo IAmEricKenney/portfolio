@@ -1,0 +1,37 @@
+<apex:page showHeader="false" sidebar="false" lightningStyleSheets="true">
+  <apex:includeLightning />
+  <apex:slds />
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_1-of-3" id="LightningVolComponentid" />
+    <div class="slds-col slds-size_1-of-3" id="LightningProfComponentid" />
+    <div class="slds-col slds-size_1-of-3" id="LightningProjComponentid" />
+  </div>
+  <script>
+    $Lightning.use("c:LWCLightningOut", function () {
+      $Lightning.createComponent(
+        "c:ProfessionalList",
+        {},
+        "LightningVolComponentid",
+        function (cmp) {
+          console.log("LWC Professional Componenet added in VF page");
+        }
+      );
+      $Lightning.createComponent(
+        "c:VolunteerList",
+        {},
+        "LightningProfComponentid",
+        function (cmp) {
+          console.log("LWC Volunteer Componenet added in VF page");
+        }
+      );
+      $Lightning.createComponent(
+        "c:ProjectList",
+        {},
+        "LightningProjComponentid",
+        function (cmp) {
+          console.log("LWC Project Componenet added in VF page");
+        }
+      );
+    });
+  </script>
+</apex:page>
