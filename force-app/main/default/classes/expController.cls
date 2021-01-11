@@ -88,13 +88,7 @@ public with sharing class expController {
   @AuraEnabled(Cacheable=true)
   public static Project__c[] getAllProjects() {
     return [
-      SELECT
-        Id,
-        Start_Date__c,
-        End_Date__c,
-        Project_URL__c,
-        Description__c,
-        Name
+      SELECT Id, Start_Date__c, End_Date__c, Description__c, Name
       FROM Project__c
       ORDER BY End_Date__c DESC
     ];
