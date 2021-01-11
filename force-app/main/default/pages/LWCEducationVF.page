@@ -9,19 +9,19 @@
   <script>
     $Lightning.use("c:LWCLightningOut", function () {
       $Lightning.createComponent(
-        "c:CertificationList",
-        {},
-        "LightningCertComponentid",
-        function (cmp) {
-          console.log("LWC Certification Component added in VF page");
-        }
-      );
-      $Lightning.createComponent(
         "c:ProgramEnrollmentList",
         {},
         "LightningPEComponentid",
         function (cmp) {
           console.log("LWC Program Enrollment Component added in VF page");
+        }
+      );
+      $Lightning.createComponent(
+        "c:CertificationList",
+        {},
+        "LightningCertComponentid",
+        function (cmp) {
+          console.log("LWC Certification Component added in VF page");
         }
       );
       $Lightning.createComponent(
