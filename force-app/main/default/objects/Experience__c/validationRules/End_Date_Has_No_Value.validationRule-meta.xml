@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_Has_No_Value</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+  OR(
+    AND(
+      ISBLANK(End_Date__c),
+      To_Present__c = FALSE
+    ),
+    AND(
+      End_Date__c = &apos;Present&apos;,
+      To_Present__c = FALSE
+    )
+  ),
+  TRUE,
+  FALSE
+)</errorConditionFormula>
+    <errorDisplayField>End_Date__c</errorDisplayField>
+    <errorMessage>&apos;End Date&apos; must have a value or &apos;To Present&apos; must be checked.</errorMessage>
+</ValidationRule>
