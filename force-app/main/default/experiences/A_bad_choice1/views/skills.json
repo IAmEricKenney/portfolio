@@ -1,0 +1,85 @@
+{
+  "appPageId": "4adcb9ac-43df-437e-99e6-9f45c3e8b84a",
+  "componentName": "community_layout:sldsFlexibleLayout",
+  "id": "0488344a-1abc-403a-b94b-f80015684fc1",
+  "label": "Skills",
+  "regions": [
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "sectionConfig": "{\"UUID\":\"aa1722be-e6ed-4485-8a71-d33899d45f32\",\"columns\":[{\"UUID\":\"a88fdb63-9288-4a07-ac61-0edb2313e702\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"padding\":null,\"margin\":{\"top\":\"0px\",\"bottom\":\"0px\",\"right\":\"8px\",\"left\":\"8px\"},\"seedComponents\":[]},{\"UUID\":\"c81308f7-da98-484c-9378-23fca6eedbe5\",\"columnName\":\"Column 2\",\"columnKey\":\"794a0\",\"columnWidth\":\"6\",\"padding\":null,\"margin\":{\"top\":\"0px\",\"bottom\":\"0px\",\"right\":\"8px\",\"left\":\"8px\"},\"seedComponents\":[]}],\"margin\":null,\"padding\":null}"
+          },
+          "componentName": "community_layout:section",
+          "id": "aa1722be-e6ed-4485-8a71-d33899d45f32",
+          "regions": [
+            {
+              "components": [
+                {
+                  "componentAttributes": {},
+                  "componentName": "c:certificationList",
+                  "id": "0ad12084-b7fb-4e6b-acb7-8a926f58aea3",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "a88fdb63-9288-4a07-ac61-0edb2313e702",
+              "regionLabel": "Column 1",
+              "regionName": "col1",
+              "renditionMap": {},
+              "type": "region"
+            },
+            {
+              "components": [
+                {
+                  "componentAttributes": {},
+                  "componentName": "c:skillsList",
+                  "id": "890482f6-e61d-4444-9c57-2c927b043e66",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "c81308f7-da98-484c-9378-23fca6eedbe5",
+              "regionLabel": "Column 2",
+              "regionName": "794a0",
+              "renditionMap": {},
+              "type": "region"
+            }
+          ],
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "scopedBrandingSetId": null,
+          "type": "component"
+        }
+      ],
+      "id": "c49038e2-a0b1-4a56-937b-339ecd62bba5",
+      "regionName": "content",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "customHeadTags": "",
+            "description": "",
+            "pageTitle": "Skills",
+            "recordId": "{!recordId}"
+          },
+          "componentName": "community_builder:seoAssistant",
+          "id": "f5e34ad0-0032-4f80-8200-e6d667cd5496",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "ca97e0fc-1161-418d-8d73-975a8cc545aa",
+      "regionName": "sfdcHiddenRegion",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "CfDvqP6TpTZNTny4nHmJj32yatqCLt",
+  "type": "view",
+  "viewType": "custom-skills"
+}

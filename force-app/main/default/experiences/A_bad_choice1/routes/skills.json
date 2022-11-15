@@ -1,0 +1,10 @@
+{
+  "activeViewId": "0488344a-1abc-403a-b94b-f80015684fc1",
+  "appPageId": "4adcb9ac-43df-437e-99e6-9f45c3e8b84a",
+  "configurationTags": [],
+  "id": "5a859472-beb7-462b-88b8-063e69024f22",
+  "label": "Skills",
+  "routeType": "custom-skills",
+  "type": "route",
+  "urlPrefix": "skills"
+}

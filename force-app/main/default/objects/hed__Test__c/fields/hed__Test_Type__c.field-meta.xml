@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Test_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The formal name for the test taken.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The formal name for the test taken.</inlineHelpText>
+    <label>Test Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Professional Certification</fullName>
+                <default>false</default>
+                <label>Professional Certification</label>
+            </value>
+            <value>
+                <fullName>Skills Assessment</fullName>
+                <default>false</default>
+                <label>Skills Assessment</label>
+            </value>
+            <value>
+                <fullName>Superbadge</fullName>
+                <default>false</default>
+                <label>Superbadge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

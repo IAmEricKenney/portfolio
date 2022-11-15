@@ -1,0 +1,60 @@
+{
+  "appPageId": "4adcb9ac-43df-437e-99e6-9f45c3e8b84a",
+  "componentName": "community_layout:sldsFlexibleLayout",
+  "id": "283b00ca-47f2-4c5f-952d-0f8579dad5f1",
+  "label": "Too Many Requests",
+  "regions": [
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "backgroundImageConfig": "",
+            "backgroundImageOverlay": "rgba(0,0,0,0)",
+            "sectionConfig": "{\"UUID\":\"ec99e1d1-1103-4275-b7ca-2e762b9dfe94\",\"columns\":[{\"UUID\":\"264b69ad-3e35-45ea-888b-9e048d622b5d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "componentName": "community_layout:section",
+          "id": "ec99e1d1-1103-4275-b7ca-2e762b9dfe94",
+          "regions": [
+            {
+              "components": [
+                {
+                  "componentAttributes": {
+                    "richTextValue": "<div style=\"display: flex; align-items: center; flex-direction: column; margin: 60px 25px 30px 25px;\">\n\t<div style=\"background-image: url(assets/img/tooManyRequests.svg); background-size: contain; height: 350px; width: 100%; background-repeat: no-repeat; background-position: center;\"></div>\n</div>\n<div style=\"margin: 0 25px; text-align: center;\">\n\t<h1 class=\"slds-text-heading_large\">Looks like the site is experiencing higher than usual demand&#8230;</h1>\n\t<p class=\"slds-text-heading_small\">Don't go anywhere. We'll redirect you in a moment.</p>\n</div>"
+                  },
+                  "componentName": "community_builder:htmlEditor",
+                  "id": "df224311-9ea6-406a-b96d-b4ff38beadd6",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                },
+                {
+                  "componentAttributes": {},
+                  "componentName": "experience_availability:autoRefresh",
+                  "id": "57ff6f1f-b80c-4d44-acc2-6161c94ca7d6",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "264b69ad-3e35-45ea-888b-9e048d622b5d",
+              "regionLabel": "Column 1",
+              "regionName": "col1",
+              "renditionMap": {},
+              "type": "region"
+            }
+          ],
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "scopedBrandingSetId": null,
+          "type": "component"
+        }
+      ],
+      "id": "6f6f6153-0da3-41a6-8dc9-88d48123ee63",
+      "regionName": "content",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "ServiceNotAvailable",
+  "type": "view",
+  "viewType": "too-many-requests"
+}

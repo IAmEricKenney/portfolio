@@ -1,24 +1,49 @@
 <template>
-  <ul class="slds-has-dividers_around-space">
-    <li class="slds-item">
-      <article class="slds-tile slds-tile_board">
-        <p class="slds-text-heading_small" title="Exam Name">
-          <a href={cert.Certification_URL__c} target="_blank"
-            >{cert.Exam_Name__c}</a
-          >
-        </p>
-        <p class="slds-truncate" title="Test Date">
-          {cert.Issuing_Organization__r.Name}
-        </p>
-        <p class="slds-truncate" title="Test Date">
-          Test Date: {cert.hed__Test_Date__c}
-        </p>
-        <p class="slds-truncate" title="Credential ID">
-          <a href={cert.Asset_URL__c} target="_blank"
-            >Credential ID: {cert.Credential_ID__c}</a
-          >
-        </p>
-      </article>
-    </li>
-  </ul>
+  <div
+    class="slds-box slds-p-around_none slds-var-m-top_x-small slds-var-m-bottom_medium slds-m-horizontal_none"
+  >
+    <lightning-layout multiple-rows>
+      <lightning-layout-item
+        size="12"
+        small-device-size="12"
+        medium-device-size="2"
+      >
+        <ul class="slds-has-dividers_around-space">
+          <li class="slds-item">
+            <article class="slds-tile slds-tile_board">
+              <img src={cert.Image_URL__c} />
+            </article>
+          </li>
+        </ul>
+      </lightning-layout-item>
+      <lightning-layout-item
+        size="12"
+        small-device-size="12"
+        medium-device-size="10"
+      >
+        <ul class="slds-has-dividers_around-space">
+          <li class="slds-item">
+            <article class="slds-tile slds-tile_board">
+              <p class="slds-text-heading_small" title="Exam Name">
+                <a href={cert.Certification_URL__c} target="_blank"
+                  >{cert.Exam_Name__c}</a
+                >
+              </p>
+              <p class="slds-truncate" title="Test Date">
+                {cert.Issuing_Organization__r.Name}
+              </p>
+              <p class="slds-truncate" title="Test Date">
+                Test Date: {cert.hed__Test_Date__c}
+              </p>
+              <p class="slds-truncate" title="Credential ID">
+                <a href={cert.Asset_URL__c} target="_blank"
+                  >Credential ID: {cert.Credential_ID__c}</a
+                >
+              </p>
+            </article>
+          </li>
+        </ul>
+      </lightning-layout-item>
+    </lightning-layout>
+  </div>
 </template>

@@ -1,4 +1,4 @@
-public with sharing class expController {
+public with sharing class ExpController {
   @AuraEnabled(Cacheable=true)
   public static hed__Program_Enrollment__c[] getAllProgEnroll() {
     return [
@@ -10,7 +10,8 @@ public with sharing class expController {
         hed__Account__r.Name,
         hed__Account__r.Website,
         hed__Account__r.Parent.Parent.Name,
-        hed__Account__r.Parent.Parent.Website
+        hed__Account__r.Parent.Parent.Website,
+        hed__Account__r.Parent.Parent.Image_URL__c
       FROM hed__Program_Enrollment__c
       ORDER BY hed__End_Date__c DESC
     ];
@@ -25,7 +26,8 @@ public with sharing class expController {
         Credential_ID__c,
         Certification_URL__c,
         Issuing_Organization__r.Name,
-        Asset_URL__c
+        Asset_URL__c,
+        Image_URL__c
       FROM hed__Test__c
       WHERE hed__Test_Type__c = 'Professional Certification'
       ORDER BY hed__Test_Date__c DESC
@@ -48,9 +50,26 @@ public with sharing class expController {
         hed__Test_Date__c,
         Certification_URL__c,
         Issuing_Organization__r.Name,
-        Asset_URL__c
+        Asset_URL__c,
+        Image_URL__c
       FROM hed__Test__c
       WHERE hed__Test_Type__c = 'Skills Assessment'
+      ORDER BY hed__Test_Date__c DESC
+    ];
+  }
+  @AuraEnabled(Cacheable=true)
+  public static hed__Test__c[] getAllSuperbadges() {
+    return [
+      SELECT
+        Id,
+        Exam_Name__c,
+        hed__Test_Date__c,
+        Certification_URL__c,
+        Issuing_Organization__r.Name,
+        Asset_URL__c,
+        Image_URL__c
+      FROM hed__Test__c
+      WHERE hed__Test_Type__c = 'Superbadge'
       ORDER BY hed__Test_Date__c DESC
     ];
   }
@@ -88,12 +107,7 @@ public with sharing class expController {
   @AuraEnabled(Cacheable=true)
   public static Project__c[] getAllProjects() {
     return [
-      SELECT
-        Id,
-        Start_Date__c,
-        End_Date__c,
-        Description__c,
-        Name
+      SELECT Id, Start_Date__c, End_Date__c, Description__c, Name
       FROM Project__c
       ORDER BY End_Date__c DESC
     ];

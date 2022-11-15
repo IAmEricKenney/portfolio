@@ -1,0 +1,79 @@
+{
+  "appPageId": "dbba657b-5b7e-49e4-8b5f-574d009fdf81",
+  "componentName": "siteforce:sldsOneColLayout",
+  "id": "6a4c4eef-34de-4fc3-844c-c4c9a6575cdb",
+  "label": "Home",
+  "regions": [
+    {
+      "id": "df62c5b3-627d-4de1-baec-575bfbd19761",
+      "regionName": "header",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "richTextValue": "<div>     <p><span style='font-size: 48px;'>Let's get started!</span></p>     <ol>         <li><span style='font-size: 18px;'>Unfamiliar with Build Your Own? Click Take a Tour in the Help menu.</span></li>         <li><span style='font-size: 18px;'>Want to add more pages? Take a look at the Pages menu.</span></li>         <li><span style='font-size: 18px;'>Want more components on your page? Drag and drop components from the Components panel.</span></li>         <li><span style='font-size: 18px;'>Want your users to see your company logo? Head on over to the Branding panel.</span></li>         <li><span style='font-size: 18px;'>Refine the look of your community with a custom theme layout. See the Lightning Communities Developer Guide.</span></li>     </ol> </div>"
+          },
+          "componentName": "forceCommunity:richTextInline",
+          "id": "1dbf05a5-a7fe-4442-bae8-d158117a6301",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        },
+        {
+          "componentAttributes": {
+            "enableInlineEdit": true,
+            "filterName": "00B3h0000090bnhEAA",
+            "layout": "STANDARD",
+            "pageSize": 25,
+            "scope": "hed__Program_Enrollment__c",
+            "showActionBar": true,
+            "showChartsPanel": true,
+            "showDisplay": "showall",
+            "showFilterPanel": true,
+            "showImageIcon": true,
+            "showManualRefreshButton": true,
+            "showObjectName": true,
+            "showPinnedList": true,
+            "showSearchBar": true
+          },
+          "componentName": "forceCommunity:objectHome",
+          "id": "e4864d11-0009-41de-8475-b9c7375aac49",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "334cd126-e9fb-4dac-824f-6d2305e4f035",
+      "regionName": "content",
+      "type": "region"
+    },
+    {
+      "id": "2e2fec23-6a8c-4097-bada-072001e43819",
+      "regionName": "footer",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "customHeadTags": "",
+            "description": "",
+            "title": "Home"
+          },
+          "componentName": "forceCommunity:seoAssistant",
+          "id": "7603b9b5-bb08-4b9f-8f3b-9b98b36490d9",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "bf0c87d8-f247-4b1d-96d3-6636d3c1f639",
+      "regionName": "sfdcHiddenRegion",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "Inner",
+  "type": "view",
+  "viewType": "home"
+}

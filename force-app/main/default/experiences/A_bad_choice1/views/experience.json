@@ -1,0 +1,85 @@
+{
+  "appPageId": "4adcb9ac-43df-437e-99e6-9f45c3e8b84a",
+  "componentName": "community_layout:sldsFlexibleLayout",
+  "id": "5925fc1e-30ea-4846-b088-f824fca1b69f",
+  "label": "Experience",
+  "regions": [
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "sectionConfig": "{\"UUID\":\"0dc0a22f-4d58-4b3f-a5bd-8aaf36df4caf\",\"columns\":[{\"UUID\":\"3a9eacae-7a23-4664-b686-23bf5758fe5e\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"padding\":null,\"margin\":{\"top\":\"0px\",\"bottom\":\"0px\",\"right\":\"8px\",\"left\":\"8px\"},\"seedComponents\":[]},{\"UUID\":\"8e6fbac4-27ff-4987-9d2a-5589fe87e357\",\"columnName\":\"Column 2\",\"columnKey\":\"c7ee5\",\"columnWidth\":\"6\",\"padding\":null,\"margin\":{\"top\":\"0px\",\"bottom\":\"0px\",\"right\":\"8px\",\"left\":\"8px\"},\"seedComponents\":[]}],\"margin\":null,\"padding\":null}"
+          },
+          "componentName": "community_layout:section",
+          "id": "0dc0a22f-4d58-4b3f-a5bd-8aaf36df4caf",
+          "regions": [
+            {
+              "components": [
+                {
+                  "componentAttributes": {},
+                  "componentName": "c:professionalList",
+                  "id": "441a9b77-0dd0-4f46-8ad5-f2db5a9a5d0c",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "3a9eacae-7a23-4664-b686-23bf5758fe5e",
+              "regionLabel": "Column 1",
+              "regionName": "col1",
+              "renditionMap": {},
+              "type": "region"
+            },
+            {
+              "components": [
+                {
+                  "componentAttributes": {},
+                  "componentName": "c:volunteerList",
+                  "id": "163c6be6-9d3e-479b-9b93-9d7a9ba2cfbe",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "8e6fbac4-27ff-4987-9d2a-5589fe87e357",
+              "regionLabel": "Column 2",
+              "regionName": "c7ee5",
+              "renditionMap": {},
+              "type": "region"
+            }
+          ],
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "scopedBrandingSetId": null,
+          "type": "component"
+        }
+      ],
+      "id": "1434fb15-02df-4113-9f87-8da292f44868",
+      "regionName": "content",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "customHeadTags": "",
+            "description": "",
+            "pageTitle": "Experience",
+            "recordId": "{!recordId}"
+          },
+          "componentName": "community_builder:seoAssistant",
+          "id": "55ab5ac6-ee72-487e-8c2f-a2892e93265a",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "73319cbf-e36c-45ed-a5a2-81170257f265",
+      "regionName": "sfdcHiddenRegion",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "CfDvqP6TpTZNTny4nHmJj32yatqCLt",
+  "type": "view",
+  "viewType": "custom-experience"
+}

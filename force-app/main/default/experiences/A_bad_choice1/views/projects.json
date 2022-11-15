@@ -1,0 +1,68 @@
+{
+  "appPageId": "4adcb9ac-43df-437e-99e6-9f45c3e8b84a",
+  "componentName": "community_layout:sldsFlexibleLayout",
+  "id": "ae4b8aec-84b7-4863-b391-462b6ed2a029",
+  "label": "Projects",
+  "regions": [
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "sectionConfig": "{\"UUID\":\"1dc26289-1f39-4b04-a41a-1bd54058ee9c\",\"columns\":[{\"UUID\":\"6599656c-895a-4ca9-9233-509cd512b717\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"padding\":null,\"margin\":null,\"seedComponents\":[]}],\"margin\":null,\"padding\":null}"
+          },
+          "componentName": "community_layout:section",
+          "id": "1dc26289-1f39-4b04-a41a-1bd54058ee9c",
+          "regions": [
+            {
+              "components": [
+                {
+                  "componentAttributes": {},
+                  "componentName": "c:projectList",
+                  "id": "c74bd074-ae2f-4330-94fb-4551089c0e36",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "6599656c-895a-4ca9-9233-509cd512b717",
+              "regionLabel": "Column 1",
+              "regionName": "col1",
+              "renditionMap": {},
+              "type": "region"
+            }
+          ],
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "scopedBrandingSetId": null,
+          "type": "component"
+        }
+      ],
+      "id": "d8b5d3b8-8701-4afa-8be7-5139512142c3",
+      "regionName": "content",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "customHeadTags": "",
+            "description": "",
+            "pageTitle": "Projects",
+            "recordId": "{!recordId}"
+          },
+          "componentName": "community_builder:seoAssistant",
+          "id": "c0132d77-5003-4ecd-9d76-6de6f70e54fb",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "fdc2f7ee-2424-489b-94be-37e64eefef78",
+      "regionName": "sfdcHiddenRegion",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "CfDvqP6TpTZNTny4nHmJj32yatqCLt",
+  "type": "view",
+  "viewType": "custom-projects"
+}

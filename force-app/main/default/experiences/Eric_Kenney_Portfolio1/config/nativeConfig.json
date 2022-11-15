@@ -1,0 +1,33 @@
+{
+  "id": "f9f4b614-4d65-4bc6-a878-2493fa93c8a6",
+  "mobilePublisherAppUpdateConfig": {
+    "forceAppUpdate": false,
+    "minVersion": {
+      "ios": {
+        "version": "10.0"
+      },
+      "android": {
+        "version": "10.1"
+      }
+    }
+  },
+  "nativeMobileNavConfig": {
+    "showBackButton": true,
+    "showHamburgerMenuWithBackButton": false
+  },
+  "nativeTabMenu": {
+    "branding": {
+      "iconTintColorUnselected": "#C9C5C5",
+      "barTintColor": "#FFFFFF"
+    },
+    "menuItems": [
+      {
+        "name": "Home",
+        "targetUrl": "/",
+        "iconAsset": "slds-icon:home"
+      }
+    ]
+  },
+  "showHamburgerMenu": true,
+  "type": "nativeConfig"
+}
