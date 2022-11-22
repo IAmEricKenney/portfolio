@@ -42,7 +42,13 @@
         <itemInstances>
             <componentInstance>
                 <componentName>skillsList</componentName>
-                <identifier>skillsList</identifier>
+                <identifier>c_skillsList</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>superbadgeList</componentName>
+                <identifier>c_superbadgeList</identifier>
             </componentInstance>
         </itemInstances>
         <name>region3</name>
