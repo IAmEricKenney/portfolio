@@ -1,0 +1,117 @@
+{
+  "activeBrandingSetId": "1801512d-5902-47ea-977f-999ad5baf372",
+  "customCSS": "",
+  "developerName": "byo",
+  "id": "7493d7f0-5fc7-49fe-901a-d8e605996a22",
+  "label": "Build Your Own (LWC)",
+  "layouts": {
+    "CfDvqP6TpTZNTny4nHmJj32yatqCLt": "d59d0c66-089b-449b-8f36-e0184f86ab97",
+    "Inner": "d3cdc6a0-b826-4a80-89b9-bfd8fd57c1d8",
+    "ServiceNotAvailable": "f661a775-e236-4c96-b674-f98107f801ec"
+  },
+  "type": "theme",
+  "views": [
+    {
+      "componentAttributes": {
+        "footerBackgroundColor": "rgb(239, 240, 242)",
+        "headerBackgroundColor": "rgb(239, 240, 242)"
+      },
+      "componentName": "community_byo:headerAndFooter",
+      "id": "d59d0c66-089b-449b-8f36-e0184f86ab97",
+      "label": "Default Header and Footer",
+      "regions": [
+        {
+          "id": "16428327-4538-4d95-9ab8-e650ee206000",
+          "regionName": "header",
+          "type": "region"
+        },
+        {
+          "id": "8e193927-c3a4-45c4-b8d2-789cce8e08bc",
+          "regionName": "footer",
+          "type": "region"
+        }
+      ],
+      "type": "view"
+    },
+    {
+      "componentAttributes": {},
+      "componentName": "community_byo:scopedHeaderAndFooter",
+      "id": "d3cdc6a0-b826-4a80-89b9-bfd8fd57c1d8",
+      "label": "Scoped Header and Footer",
+      "regions": [
+        {
+          "components": [
+            {
+              "componentAttributes": {
+                "sectionConfig": "{\"UUID\":\"6ba18485-e66b-4876-b6af-0b2803541dda\",\"columns\":[{\"UUID\":\"eab93367-f888-46af-adbf-855873cb62c8\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+              },
+              "componentName": "community_layout:section",
+              "id": "6ba18485-e66b-4876-b6af-0b2803541dda",
+              "regions": [
+                {
+                  "id": "eab93367-f888-46af-adbf-855873cb62c8",
+                  "regionLabel": "Theme Header",
+                  "regionName": "headerSection",
+                  "renditionMap": {},
+                  "type": "region"
+                }
+              ],
+              "renditionMap": {},
+              "scopedBrandingSetId": null,
+              "type": "component"
+            }
+          ],
+          "id": "9cab3879-f9d5-4226-b971-8f4804f39adc",
+          "regionName": "header",
+          "type": "region"
+        },
+        {
+          "components": [
+            {
+              "componentAttributes": {
+                "sectionConfig": "{\"UUID\":\"9effc0e7-4d61-4f3c-b4e3-2e1f08dd99a5\",\"columns\":[{\"UUID\":\"411763fb-781a-41db-a94b-9f504f07056a\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+              },
+              "componentName": "community_layout:section",
+              "id": "9effc0e7-4d61-4f3c-b4e3-2e1f08dd99a5",
+              "regions": [
+                {
+                  "id": "411763fb-781a-41db-a94b-9f504f07056a",
+                  "regionLabel": "Theme Footer",
+                  "regionName": "footerSection",
+                  "renditionMap": {},
+                  "type": "region"
+                }
+              ],
+              "renditionMap": {},
+              "scopedBrandingSetId": null,
+              "type": "component"
+            }
+          ],
+          "id": "356d4f6a-1441-4075-b3b7-7c212b59e2f3",
+          "regionName": "footer",
+          "type": "region"
+        }
+      ],
+      "type": "view"
+    },
+    {
+      "componentAttributes": {},
+      "componentName": "community_layout:simpleThemeLayout",
+      "id": "f661a775-e236-4c96-b674-f98107f801ec",
+      "label": "Service Not Available Theme Layout",
+      "regions": [
+        {
+          "id": "497464e3-b1e2-4092-bb71-43de3ea2bbad",
+          "regionName": "header",
+          "type": "region"
+        },
+        {
+          "id": "a7c49556-5e7e-4256-9508-839600653333",
+          "regionName": "footer",
+          "type": "region"
+        }
+      ],
+      "type": "view"
+    }
+  ]
+}

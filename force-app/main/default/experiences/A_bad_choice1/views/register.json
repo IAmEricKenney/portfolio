@@ -1,0 +1,86 @@
+{
+  "appPageId": "4adcb9ac-43df-437e-99e6-9f45c3e8b84a",
+  "componentName": "community_layout:sldsFlexibleLayout",
+  "id": "e4b1ed0e-4666-4ca8-9d9e-054d332dd17f",
+  "label": "Register",
+  "regions": [
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "sectionConfig": "{\"UUID\":\"c0bccc74-1a8f-44b5-b1f8-9ac4806f4629\",\"columns\":[{\"UUID\":\"718e5556-daa2-4d05-91a5-23d71aa55924\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"padding\":null,\"margin\":null,\"seedComponents\":[]}],\"margin\":null,\"padding\":null}"
+          },
+          "componentName": "community_layout:section",
+          "id": "c0bccc74-1a8f-44b5-b1f8-9ac4806f4629",
+          "regions": [
+            {
+              "components": [
+                {
+                  "componentAttributes": {},
+                  "componentName": "community_login:communityLogo",
+                  "id": "42092610-4d4a-4914-8f1b-1380cbc78600",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                },
+                {
+                  "componentAttributes": {
+                    "cancelLinkLabel": "Already have an account?",
+                    "confirmPasswordLabel": "Confirm Password",
+                    "emailLabel": "Email",
+                    "firstnameLabel": "First Name",
+                    "includePasswordField": true,
+                    "lastnameLabel": "Last Name",
+                    "passwordLabel": "Create Password",
+                    "regConfirmUrl": "./CheckPasswordResetEmail",
+                    "submitButtonLabel": "Sign Up"
+                  },
+                  "componentName": "community_login:selfRegister",
+                  "id": "ce95357f-0b12-4eae-ae15-e3adb1e4ffc5",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "718e5556-daa2-4d05-91a5-23d71aa55924",
+              "regionLabel": "Column 1",
+              "regionName": "col1",
+              "renditionMap": {},
+              "type": "region"
+            }
+          ],
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "scopedBrandingSetId": null,
+          "type": "component"
+        }
+      ],
+      "id": "230be8f7-0c1f-4d2e-8f79-864d40cb8b89",
+      "regionName": "content",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "customHeadTags": "",
+            "description": "",
+            "pageTitle": "Register",
+            "recordId": "{!recordId}"
+          },
+          "componentName": "community_builder:seoAssistant",
+          "id": "e50f363a-4113-4b3d-b5ae-7490502bb3df",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "e8aca884-e153-4d98-b36d-18ca8c4890a7",
+      "regionName": "sfdcHiddenRegion",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "CfDvqP6TpTZNTny4nHmJj32yatqCLt",
+  "type": "view",
+  "viewType": "self-register"
+}
