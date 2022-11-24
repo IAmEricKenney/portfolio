@@ -10,10 +10,10 @@
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Delete</value>
+                            <value>Clone</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Clone</value>
+                            <value>Delete</value>
                         </valueListItems>
                         <valueListItems>
                             <value>ChangeRecordType</value>
@@ -62,30 +62,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>required</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.hed__Contact__c</fieldItem>
-                <identifier>Recordhed_Contact_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.hed__Test_Type__c</fieldItem>
-                <identifier>Recordhed_Test_Type_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.hed__Test_Date__c</fieldItem>
-                <identifier>Recordhed_Test_Date_cField</identifier>
+                <fieldItem>Record.Organization__c</fieldItem>
+                <identifier>RecordOrganization_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -94,8 +74,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.hed__Source__c</fieldItem>
-                <identifier>Recordhed_Source_cField</identifier>
+                <fieldItem>Record.Job_Title__c</fieldItem>
+                <identifier>RecordJob_Title_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -104,8 +84,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Asset_URL__c</fieldItem>
-                <identifier>RecordAsset_URL_cField</identifier>
+                <fieldItem>Record.Start_Date__c</fieldItem>
+                <identifier>RecordStart_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -114,8 +94,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Certification_URL__c</fieldItem>
-                <identifier>RecordCertification_URL_cField</identifier>
+                <fieldItem>Record.End_Date__c</fieldItem>
+                <identifier>RecordEnd_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -124,11 +104,11 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Content_Key__c</fieldItem>
-                <identifier>RecordContent_Key_cField</identifier>
+                <fieldItem>Record.To_Present__c</fieldItem>
+                <identifier>RecordTo_Present_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-21c90a0f-e0cc-46a9-8876-41bdac4c9878</name>
+        <name>Facet-c920f4a2-04a2-4fdc-b52c-6e8821c7b161</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -138,8 +118,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Issuing_Organization__c</fieldItem>
-                <identifier>RecordIssuing_Organization_cField</identifier>
+                <fieldItem>Record.Description__c</fieldItem>
+                <identifier>RecordDescription_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -148,51 +128,11 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Exam_Name__c</fieldItem>
-                <identifier>RecordExam_Name_cField</identifier>
+                <fieldItem>Record.Sort_Order__c</fieldItem>
+                <identifier>RecordSort_Order_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Credential_ID__c</fieldItem>
-                <identifier>RecordCredential_ID_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Number_of_Questions__c</fieldItem>
-                <identifier>RecordNumber_of_Questions_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Total_Score__c</fieldItem>
-                <identifier>RecordTotal_Score_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Total_Percentage__c</fieldItem>
-                <identifier>RecordTotal_Percentage_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-2c4c6bf6-d662-4787-8b5a-e5100442db82</name>
+        <name>Facet-23b2267c-6818-46b4-af48-5d8f2898b6f8</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -200,7 +140,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-21c90a0f-e0cc-46a9-8876-41bdac4c9878</value>
+                    <value>Facet-c920f4a2-04a2-4fdc-b52c-6e8821c7b161</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
                 <identifier>flexipage_column</identifier>
@@ -210,13 +150,13 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-2c4c6bf6-d662-4787-8b5a-e5100442db82</value>
+                    <value>Facet-23b2267c-6818-46b4-af48-5d8f2898b6f8</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
                 <identifier>flexipage_column2</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-d3754587-3f98-4dd0-a81e-2aa28f123326</name>
+        <name>Facet-0a6e1393-c803-4cd6-9373-cea8b974d80a</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -230,7 +170,17 @@
                 <identifier>RecordCreatedByIdField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-6fcf5c06-8257-48b2-956b-06ffb85486bb</name>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.RecordTypeId</fieldItem>
+                <identifier>RecordRecordTypeIdField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-9a443d0c-cecd-4849-9bde-d3c92b98dbd8</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -244,7 +194,17 @@
                 <identifier>RecordLastModifiedByIdField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-9dec0e0b-6081-49aa-8dff-ae6d8fdffc5e</name>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.OwnerId</fieldItem>
+                <identifier>RecordOwnerIdField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-6e331039-679f-446d-8fca-009c16b4ec2c</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -252,7 +212,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-6fcf5c06-8257-48b2-956b-06ffb85486bb</value>
+                    <value>Facet-9a443d0c-cecd-4849-9bde-d3c92b98dbd8</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
                 <identifier>flexipage_column3</identifier>
@@ -262,13 +222,13 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-9dec0e0b-6081-49aa-8dff-ae6d8fdffc5e</value>
+                    <value>Facet-6e331039-679f-446d-8fca-009c16b4ec2c</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
                 <identifier>flexipage_column4</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-5c546ce8-7497-455f-bec1-046ac46b83f7</name>
+        <name>Facet-be94021c-f44d-40f8-b490-cd2bb7b9bcae</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -276,7 +236,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
-                    <value>Facet-d3754587-3f98-4dd0-a81e-2aa28f123326</value>
+                    <value>Facet-0a6e1393-c803-4cd6-9373-cea8b974d80a</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -290,7 +250,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
-                    <value>Facet-5c546ce8-7497-455f-bec1-046ac46b83f7</value>
+                    <value>Facet-be94021c-f44d-40f8-b490-cd2bb7b9bcae</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
@@ -313,108 +273,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>actionNames</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>MassChangeOwner</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>New</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>maxRecordsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>parentFieldApiName</name>
-                    <value>hed__Test__c.Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>hed__Test_Scores__r</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListDisplayType</name>
-                    <value>ADVGRID</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListFieldAliases</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>NAME</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Subject_Area__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Section_Percentage__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Score_Percentage__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Correct_Questions__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>hed__Test_Type__c</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListLabel</name>
-                    <value>Test Scores</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldAlias</name>
-                    <value>__DEFAULT__</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldOrder</name>
-                    <value>Default</value>
-                </componentInstanceProperties>
-                <componentName>lst:dynamicRelatedList</componentName>
-                <identifier>lst_dynamicRelatedList</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>parentFieldApiName</name>
-                    <value>hed__Test__c.Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>AttachedContentDocuments</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListComponentOverride</name>
-                    <value>ADVGRID</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>rowsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>relatedTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>active</name>
                     <value>true</value>
                 </componentInstanceProperties>
@@ -428,20 +286,6 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>detailTab</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>relatedTabContent</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Standard.Tab.relatedLists</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>relatedListsTab</identifier>
             </componentInstance>
         </itemInstances>
         <name>maintabs</name>
@@ -461,8 +305,8 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Test Record Page</masterLabel>
-    <sobjectType>hed__Test__c</sobjectType>
+    <masterLabel>Experience Record Page</masterLabel>
+    <sobjectType>Experience__c</sobjectType>
     <template>
         <name>flexipage:recordHomeSimpleViewTemplate</name>
     </template>
