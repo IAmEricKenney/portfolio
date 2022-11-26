@@ -52,10 +52,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField</identifier>
+                <fieldItem>Record.Exam_Name__c</fieldItem>
+                <identifier>RecordExam_Name_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -118,16 +118,6 @@
                 <identifier>RecordCertification_URL_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Content_Key__c</fieldItem>
-                <identifier>RecordContent_Key_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-21c90a0f-e0cc-46a9-8876-41bdac4c9878</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -148,8 +138,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Exam_Name__c</fieldItem>
-                <identifier>RecordExam_Name_cField</identifier>
+                <fieldItem>Record.Credential_ID__c</fieldItem>
+                <identifier>RecordCredential_ID_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -158,8 +148,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Credential_ID__c</fieldItem>
-                <identifier>RecordCredential_ID_cField</identifier>
+                <fieldItem>Record.Content_Key__c</fieldItem>
+                <identifier>RecordContent_Key_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -190,6 +180,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Total_Percentage__c</fieldItem>
                 <identifier>RecordTotal_Percentage_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Name</fieldItem>
+                <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-2c4c6bf6-d662-4787-8b5a-e5100442db82</name>
