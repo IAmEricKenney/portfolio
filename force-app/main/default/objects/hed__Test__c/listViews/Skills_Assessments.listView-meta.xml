@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Skills_Assessments</fullName>
+    <columns>NAME</columns>
+    <columns>Exam_Name__c</columns>
+    <columns>hed__Test_Date__c</columns>
+    <columns>Issuing_Organization__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>hed__Test_Type__c</field>
+        <operation>equals</operation>
+        <value>Skills Assessment</value>
+    </filters>
+    <label>Skills Assessments</label>
+</ListView>
