@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Field_Of_Study__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The field of study of the Academic Certification.</description>
+    <externalId>false</externalId>
+    <inlineHelpText
+  >The field of study of the Academic Certification.</inlineHelpText>
+    <label>Field of Study</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business, Management, and Marketing</fullName>
+                <default>false</default>
+                <label>Business, Management, and Marketing</label>
+            </value>
+            <value>
+                <fullName>Computer and Information Sciences</fullName>
+                <default>false</default>
+                <label>Computer and Information Sciences</label>
+            </value>
+            <value>
+                <fullName
+        >Geography and Geographic Information Systems</fullName>
+                <default>false</default>
+                <label>Geography and Geographic Information Systems</label>
+            </value>
+            <value>
+                <fullName>Public Administration</fullName>
+                <default>false</default>
+                <label>Public Administration</label>
+            </value>
+            <value>
+                <fullName>Social Sciences</fullName>
+                <default>false</default>
+                <label>Social Sciences</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
