@@ -29,6 +29,7 @@
     <tabs>hed__Test_Score__c</tabs>
     <tabs>Experience__c</tabs>
     <tabs>Project__c</tabs>
+    <tabs>standard-CmsWorkspaces</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Portfolio_UtilityBar</utilityBar>
 </CustomApplication>
