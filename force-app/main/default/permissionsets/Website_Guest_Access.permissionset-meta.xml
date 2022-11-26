@@ -171,6 +171,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Experience__c.Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Experience__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1069,6 +1074,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>hed__Test__c.Certification_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>hed__Test__c.Content_Key__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
