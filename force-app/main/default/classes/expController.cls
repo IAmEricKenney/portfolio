@@ -94,6 +94,7 @@ public with sharing class ExpController {
     return [
       SELECT
         Id,
+        Description__c,
         End_Date__c,
         Start_Date__c,
         Job_Title__c,
