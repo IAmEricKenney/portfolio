@@ -7,6 +7,7 @@
     <columns>Section_Percentage__c</columns>
     <columns>Score_Percentage__c</columns>
     <columns>Correct_Questions__c</columns>
+    <columns>hed__Status__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

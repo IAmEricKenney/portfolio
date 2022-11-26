@@ -33,11 +33,13 @@
             <value>
                 <fullName>In Progress</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>In Progress</label>
             </value>
             <value>
                 <fullName>On Hold</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>On Hold</label>
             </value>
         </valueSetDefinition>
