@@ -78,16 +78,6 @@
                 <identifier>Recordhed_Academic_Level_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.hed__Description__c</fieldItem>
-                <identifier>Recordhed_Description_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-bdb6a13d-b093-402c-bf91-80ba54ef9a8e</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -120,17 +110,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.hed__Field_Of_Study__c</fieldItem>
                 <identifier>Recordhed_Field_Of_Study_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.hed__Credentialing_Identifier__c</fieldItem>
-                <identifier
-        >Recordhed_Credentialing_Identifier_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-f4ee17f2-0328-4273-8c71-76e437e56df5</name>
