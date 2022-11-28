@@ -164,7 +164,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Read</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <label>Education History</label>
     <nameField>
         <displayFormat>EH-{0000}</displayFormat>
@@ -173,6 +173,8 @@
     </nameField>
     <pluralLabel>Education History</pluralLabel>
     <searchLayouts>
+        <searchResultsAdditionalFields
+    >hed__Educational_Institution_Name__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields
     >hed__Account__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields

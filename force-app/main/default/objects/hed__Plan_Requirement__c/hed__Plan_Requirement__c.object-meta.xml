@@ -128,33 +128,25 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment
-    >Action override created by Lightning App Builder during activation.</comment>
-        <content>EDA_Program_Enrollment_Record_Page1</content>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
+        <type>Default</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment
-    >Action override created by Lightning App Builder during activation.</comment>
-        <content>EDA_Program_Enrollment_Record_Page1</content>
         <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment
-  >hed__HEDA_Program_Enrollment_Compact_Layout</compactLayoutAssignment>
+  >hed__HEDA_Plan_Requirement_Compact_Layout</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
     <description
-  >A student Contact&apos;s enrollment in an academic program offered by a Department or School (the degree-granting Account type for the educational institution).</description>
+  >The various course requirements for completing a Program Plan.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -165,21 +157,13 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Program Enrollment</label>
+    <label>Plan Requirement</label>
     <nameField>
-        <displayFormat>PE-{0000}</displayFormat>
-        <label>Program Enrollment ID</label>
-        <type>AutoNumber</type>
+        <label>Plan Requirement Name</label>
+        <type>Text</type>
     </nameField>
-    <pluralLabel>Program Enrollments</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields
-    >hed__Education_History__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >hed__Account__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >hed__Program_Plan__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <pluralLabel>Plan Requirements</pluralLabel>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

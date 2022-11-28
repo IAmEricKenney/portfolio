@@ -130,7 +130,7 @@
         <actionName>View</actionName>
         <comment
     >Action override created by Lightning App Builder during activation.</comment>
-        <content>EDA_Program_Enrollment_Record_Page1</content>
+        <content>Course_Offering_Record_Page</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
@@ -139,7 +139,7 @@
         <actionName>View</actionName>
         <comment
     >Action override created by Lightning App Builder during activation.</comment>
-        <content>EDA_Program_Enrollment_Record_Page1</content>
+        <content>Course_Offering_Record_Page</content>
         <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
@@ -150,11 +150,11 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment
-  >hed__HEDA_Program_Enrollment_Compact_Layout</compactLayoutAssignment>
+  >hed__HEDA_Course_Offering_Compact_Layout</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
     <description
-  >A student Contact&apos;s enrollment in an academic program offered by a Department or School (the degree-granting Account type for the educational institution).</description>
+  >Joins Courses and Terms to contain information related to a single occurrence of a Course.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -164,22 +164,14 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
-    <label>Program Enrollment</label>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Course Offering</label>
     <nameField>
-        <displayFormat>PE-{0000}</displayFormat>
-        <label>Program Enrollment ID</label>
-        <type>AutoNumber</type>
+        <label>Course Offering ID</label>
+        <type>Text</type>
     </nameField>
-    <pluralLabel>Program Enrollments</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields
-    >hed__Education_History__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >hed__Account__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >hed__Program_Plan__c</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <pluralLabel>Course Offerings</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
