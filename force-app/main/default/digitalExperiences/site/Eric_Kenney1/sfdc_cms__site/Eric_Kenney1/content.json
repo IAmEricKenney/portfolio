@@ -1,0 +1,8 @@
+{
+  "type" : "sfdc_cms__site",
+  "title" : "Eric Kenney",
+  "contentBody" : {
+    "authenticationType" : "AUTHENTICATED_WITH_PUBLIC_ACCESS_ENABLED"
+  },
+  "urlName" : "eric-kenney"
+}

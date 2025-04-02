@@ -1,0 +1,47 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Service Not Available",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
+            "sectionConfig" : "{\"UUID\":\"c62fd21f-2870-45d9-a0aa-8eabd313a5d5\",\"columns\":[{\"UUID\":\"6b3e85cd-d5c8-40f2-9600-cc4fde8689f1\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "richTextValue" : "<div style=\"display: flex; align-items: center; flex-direction: column; margin: 60px 25px 40px 25px;\">\n\t<div style=\"background: url(assets/img/serviceNotAvailable.svg) center no-repeat; background-size: contain; height: 331px; width: 100%; max-width: 538px;\"></div>\n</div>\n<div style=\"margin: 0 25px; text-align: center;\">\n\t<p><b style=\"font-size: 3.4em\">We hit a snag</b></p>\n\t<br/>\n\t<p><span style=\"font-size: 2em;\">Looks like the site is down. Try again in a bit.</span></p>\n</div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "dd377d5b-6a07-48d3-9756-86cfeca46df5",
+              "type" : "component"
+            } ],
+            "id" : "6b3e85cd-d5c8-40f2-9600-cc4fde8689f1",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "c62fd21f-2870-45d9-a0aa-8eabd313a5d5",
+          "type" : "component"
+        } ],
+        "id" : "16119a95-2528-43a9-8b1d-8d3aa7ff4d8c",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "9f6b9d59-bbdd-4bc2-96e8-560c8b5e2bcc",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "ServiceNotAvailable",
+    "viewType" : "service-not-available"
+  },
+  "urlName" : "service-not-available"
+}

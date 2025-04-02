@@ -1,0 +1,63 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Projects",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
+            "sectionConfig" : "{\"UUID\":\"a1ad7e96-0582-4245-ad85-673162ca5c0d\",\"columns\":[{\"UUID\":\"95285c7d-12b2-4aae-92e9-6543a7ba1939\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:projectList",
+              "id" : "7d868d63-f2cb-4121-a131-9901022eaa51",
+              "type" : "component"
+            } ],
+            "id" : "95285c7d-12b2-4aae-92e9-6543a7ba1939",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "a1ad7e96-0582-4245-ad85-673162ca5c0d",
+          "type" : "component"
+        } ],
+        "id" : "31a43bbf-86bb-4e5f-8152-d51e9feb5861",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "Projects | Eric Kenney, CSPO, CSM, PSM1 | A Salesforce Professional",
+            "dxpStyle" : { },
+            "pageTitle" : "Projects",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "1b71db28-1c74-47c2-b00d-77ecfd1f9a81",
+          "type" : "component"
+        } ],
+        "id" : "b66bf6bb-3aae-4447-98c2-9f804388e375",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "f645c21d-3bf2-465e-ac8e-fc543bdd2a8d",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-projects"
+  },
+  "urlName" : "projects"
+}

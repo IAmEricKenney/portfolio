@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Experience",
+  "contentBody" : {
+    "activeViewId" : "Experience",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-experience",
+    "urlPrefix" : "experience"
+  },
+  "urlName" : "experience"
+}

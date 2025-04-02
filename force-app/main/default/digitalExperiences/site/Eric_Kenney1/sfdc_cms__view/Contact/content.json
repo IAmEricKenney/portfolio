@@ -1,0 +1,131 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Contact",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
+            "sectionConfig" : "{\"UUID\":\"1cb3c8d7-3963-40b6-91a2-4e9bc835849d\",\"columns\":[{\"UUID\":\"7072b270-ef32-4455-9cf6-4406df5b699a\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "richTextValue" : "<p><strong style=\"font-size: 24px; font-family: verdana; color: rgb(187, 187, 187);\">Contact Eric using the form below or connect on </strong><a href=\"https://www.linkedin.com/in/iamerickenney/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 24px; font-family: verdana; color: rgb(136, 136, 136); background-color: rgb(255, 255, 255);\"><strong>LinkedIn</strong></a></p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "2409dcfd-a72f-453a-b68e-46ceae138c7e",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "buttonAlignment" : "left",
+                "buttonSize" : "standard",
+                "buttonText" : "Submit",
+                "companyLabel" : "Company",
+                "companyPlaceholder" : "Enter your company name or your full name",
+                "customFieldFiveConfig" : "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":true,\"fieldMaxLength\":null,\"fieldApiName\":\"\"}",
+                "customFieldFiveLabel" : "Custom Field Label",
+                "customFieldFivePlaceholder" : "Custom Field Placeholder",
+                "customFieldFourConfig" : "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":true,\"fieldMaxLength\":null,\"fieldApiName\":\"\"}",
+                "customFieldFourLabel" : "Custom Field Label",
+                "customFieldFourPlaceholder" : "Custom Field Placeholder",
+                "customFieldOneConfig" : "{\"fieldInputType\":\"Text\",\"fieldMaxLength\":255,\"fieldApiName\":\"Lead_Form_Message__c\",\"isFieldInputTypeEditable\":true}",
+                "customFieldOneLabel" : "Message",
+                "customFieldOnePlaceholder" : "Enter your message for Eric (255 chars)",
+                "customFieldThreeConfig" : "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":true,\"fieldMaxLength\":null,\"fieldApiName\":\"\"}",
+                "customFieldThreeLabel" : "Custom Field Label",
+                "customFieldThreePlaceholder" : "Custom Field Placeholder",
+                "customFieldTwoConfig" : "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":true,\"fieldMaxLength\":null,\"fieldApiName\":\"\"}",
+                "customFieldTwoLabel" : "Custom Field Label",
+                "customFieldTwoPlaceholder" : "Custom Field Placeholder",
+                "defaultCompanyValue" : "Company Not Available",
+                "dxpStyle" : { },
+                "emailFieldConfig" : "{\"fieldInputType\":\"Email\",\"isFieldInputTypeEditable\":false,\"fieldMaxLength\":null,\"fieldApiName\":\"Email\"}",
+                "emailLabel" : "Email",
+                "emailPlaceholder" : "Enter your email address",
+                "firstNameFieldConfig" : "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":false,\"fieldMaxLength\":null,\"fieldApiName\":\"FirstName\"}",
+                "firstNameLabel" : "First Name",
+                "firstNamePlaceholder" : "Enter your first name",
+                "isCustomFieldFiveRequired" : false,
+                "isCustomFieldFourRequired" : false,
+                "isCustomFieldOneRequired" : false,
+                "isCustomFieldThreeRequired" : false,
+                "isCustomFieldTwoRequired" : false,
+                "isEmailRequired" : false,
+                "isFirstNameRequired" : false,
+                "isLastNameRequired" : false,
+                "isPhoneRequired" : false,
+                "lastNameFieldConfig" : "{\"fieldInputType\":\"Text\",\"isFieldInputTypeEditable\":false,\"fieldMaxLength\":null,\"fieldApiName\":\"LastName\"}",
+                "lastNameLabel" : "Last Name",
+                "lastNamePlaceholder" : "Enter your last name",
+                "phoneFieldConfig" : "{\"fieldInputType\":\"Phone\",\"isFieldInputTypeEditable\":false,\"fieldMaxLength\":null,\"fieldApiName\":\"Phone\"}",
+                "phoneLabel" : "Phone",
+                "phonePlaceholder" : "Enter your phone number",
+                "position" : "left",
+                "showCompanyField" : true,
+                "showCustomFieldFive" : false,
+                "showCustomFieldFour" : false,
+                "showCustomFieldOne" : true,
+                "showCustomFieldThree" : false,
+                "showCustomFieldTwo" : false,
+                "showEmailField" : true,
+                "showFirstNameField" : true,
+                "showFormLabels" : true,
+                "showLastNameField" : true,
+                "showPhoneField" : true,
+                "submitActionCustomErrorMessage" : "Looks like something went wrong.",
+                "submitActionSuccessInlineMessage" : "Thank you!",
+                "submitActionSuccessInlineMessageFontSize" : "small",
+                "submitActionSuccessInlineMessagePosition" : "left",
+                "submitActionType" : "inline",
+                "width" : 100
+              },
+              "definition" : "dxp_form:leadForm",
+              "id" : "bc53100d-c251-42fb-a928-95d70800ef33",
+              "type" : "component"
+            } ],
+            "id" : "7072b270-ef32-4455-9cf6-4406df5b699a",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "1cb3c8d7-3963-40b6-91a2-4e9bc835849d",
+          "type" : "component"
+        } ],
+        "id" : "56b8ff30-705e-4453-a18e-511300cfb6e2",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "Contact | Eric Kenney, CSPO, CSM, PSM1 | A Salesforce Professional",
+            "dxpStyle" : { },
+            "pageTitle" : "Contact",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "63da9d9d-a32f-4274-ac99-20174ad1f220",
+          "type" : "component"
+        } ],
+        "id" : "9a5f0d65-40ae-4231-ae3b-c3d8b8c30a6a",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "216bde47-030e-4c38-b3f8-dcae64fff4e1",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-contact"
+  },
+  "urlName" : "contact"
+}

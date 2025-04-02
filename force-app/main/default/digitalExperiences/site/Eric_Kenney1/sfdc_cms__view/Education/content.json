@@ -1,0 +1,63 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Education",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
+            "sectionConfig" : "{\"UUID\":\"7da8e654-ff0d-436f-9d1d-80b7fb496b35\",\"columns\":[{\"UUID\":\"e0d1d684-bc0e-4742-9b20-4d17e26fa022\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:programEnrollmentList",
+              "id" : "f9be5daf-168c-4184-a2de-39490cbd0262",
+              "type" : "component"
+            } ],
+            "id" : "e0d1d684-bc0e-4742-9b20-4d17e26fa022",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "7da8e654-ff0d-436f-9d1d-80b7fb496b35",
+          "type" : "component"
+        } ],
+        "id" : "f575b8aa-2f36-49ef-baba-f63eaf291b52",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "Education | Eric Kenney, CSPO, CSM, PSM1 | A Salesforce Professional",
+            "dxpStyle" : { },
+            "pageTitle" : "Education",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "13cbaad7-97f3-4996-8788-1f9c39ad0df3",
+          "type" : "component"
+        } ],
+        "id" : "70c13a04-9548-4086-a113-dcbc8dee25b1",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "d094e1f6-c7c9-404f-9062-c7102c79e182",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-education"
+  },
+  "urlName" : "education"
+}

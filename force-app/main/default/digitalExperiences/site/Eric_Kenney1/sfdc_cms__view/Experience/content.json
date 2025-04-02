@@ -1,0 +1,76 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Experience",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
+            "sectionConfig" : "{\"UUID\":\"fb62115a-03eb-4430-bead-4dbc973d490d\",\"columns\":[{\"UUID\":\"a81ef915-b886-4d21-a45f-2046cddb21f4\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"79845cac-ac57-4dfd-80fa-e42c9dbb9073\",\"columnName\":\"Column 2\",\"columnKey\":\"efe9d\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:professionalList",
+              "id" : "00cd9e6c-c3a2-4206-a36a-d88882756d1d",
+              "type" : "component"
+            } ],
+            "id" : "a81ef915-b886-4d21-a45f-2046cddb21f4",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:volunteerList",
+              "id" : "bb1230ab-44da-42f2-a738-21c302bc72fe",
+              "type" : "component"
+            } ],
+            "id" : "79845cac-ac57-4dfd-80fa-e42c9dbb9073",
+            "name" : "efe9d",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "fb62115a-03eb-4430-bead-4dbc973d490d",
+          "type" : "component"
+        } ],
+        "id" : "45d3a742-e38c-436c-a921-391746aed81d",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "Experience | Eric Kenney, CSPO, CSM, PSM1 | A Salesforce Professional",
+            "dxpStyle" : { },
+            "pageTitle" : "Experience",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "a6346e27-5863-4a03-8281-36e8295ff430",
+          "type" : "component"
+        } ],
+        "id" : "5e513b14-1330-47fe-b39c-e780de2c8fd2",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "a3aefeaf-7683-47b3-8e34-4544455d23e1",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-experience"
+  },
+  "urlName" : "experience"
+}

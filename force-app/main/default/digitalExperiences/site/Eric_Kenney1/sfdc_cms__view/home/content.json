@@ -1,0 +1,152 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
+            "sectionConfig" : "{\"UUID\":\"43fe24d7-bc09-41a4-af11-b1117bf728d0\",\"columns\":[{\"UUID\":\"9e1ef8ba-652e-42d9-a315-4eb80edb69db\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"3\",\"seedComponents\":null},{\"UUID\":\"ccefe4a2-449c-4db3-bde4-72311f372c09\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"9\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "richTextValue" : "<p style=\"text-align: center;\"><img src=\"{!cmsMedia.MCNLMKEUUIYNF6FDKCXROMV35IDM}\" alt=\"\" width=\"253\" style=\"\"></p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "aa782ee1-ee89-4b1e-859e-a8bd354dee6f",
+              "type" : "component"
+            } ],
+            "id" : "9e1ef8ba-652e-42d9-a315-4eb80edb69db",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "richTextValue" : "<p><strong style=\"font-size: 24px;\">Eric Kenney, CSPO, CSM, PSM1 | 17x Salesforce Certified | All-Star Trailhead Ranger | 3x Masters Degrees</strong></p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "65c940eb-c384-4ba3-9077-b048987b8d46",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "alignment" : "center",
+                "color" : "rgb(210, 209, 207)",
+                "dxpStyle" : { },
+                "lineStyle" : "solid",
+                "size" : 5,
+                "width" : 100
+              },
+              "definition" : "dxp_base:horizontalLine",
+              "id" : "c530ac8c-b2aa-45ad-b0f6-189a7a6d63a6",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "richTextValue" : "<p>Eric is a highly skilled and motivated Salesforce professional with over 10 years experience as an admin, consultant, architect, and manager. He has extensive knowledge of Sales, Service, Education and Nonprofit Clouds and a decent level of knowledge in Experience Cloud. Eric is 14x Salesforce Certified, an Automation Process Accredited Professional through <a href=\"https://partners.salesforce.com/pdx/s/learn/article/accredited-professional-MCBQXAKQTOTZCQHOXTMK33NUMLWY?language=en_US\" rel=\"noopener noreferrer\" target=\"_blank\">Salesforce Partners</a>, Slack Admin Certified, and an <a href=\"https://trailblazer.me/id/iamerickenney\" rel=\"noopener noreferrer\" target=\"_blank\">All-Star Ranger on Trailhead</a>. Haven spoken at Dreamforce twice, the Higher Ed Summit twice, and other conferences, he is no stranger to speaking in front of people. He also has a terrific ability to engage with people on a one-on-one basis and address questions. Co-workers and colleagues have always been impressed by his ability to stay calm in tense situations, and his ability to communicate in a way that makes them feel comfortable.</p><p><br></p><p>His management style is that of a listener and a servant leader. He encourages growth, exploration, and critical thinking. When working with end-users he utilizes the <a href=\"https://admin.salesforce.com/blog/2018/using-sabwa-drive-salesforce-adoption\" rel=\"noopener noreferrer\" target=\"_blank\">SABWA technique</a> as coined by Salesforce Admin Evangelist <a href=\"https://www.mikegerholdt.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Mike Gerholdt</a>. SABWA stands for \"Salesforce Administration By Walking Around\" -- or perhaps in our post-COVID WFH environment, it should be SABZA (By Zoom-ing Around).</p><p><br></p><p>Eric is comfortable and extremely knowledgeable in a SCRUM/Agile environment. He is <a href=\"https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster\" rel=\"noopener noreferrer\" target=\"_blank\">Scrum Master Certified</a> from both <a href=\"https://www.scrumalliance.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Scrum Alliance</a> and <a href=\"https://www.scrum.org/\" rel=\"noopener noreferrer\" target=\"_blank\">scrum.org</a> (<a href=\"https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments\" rel=\"noopener noreferrer\" target=\"_blank\">Professional Scrum Master I</a>) and additionally <a href=\"https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner\" rel=\"noopener noreferrer\" target=\"_blank\">Certified Scrum Product Owner</a> from <a href=\"https://www.scrumalliance.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Scrum Alliance</a>.</p><p><br></p><p>Eric enjoys challenges and is willing to take them on head first. His connections, knowledge, and exploratory nature allow him to find the right solutions.</p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "628eae86-487f-4394-a5f5-56af46193013",
+              "type" : "component"
+            } ],
+            "id" : "ccefe4a2-449c-4db3-bde4-72311f372c09",
+            "name" : "col2",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "43fe24d7-bc09-41a4-af11-b1117bf728d0",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
+            "sectionConfig" : "{\"UUID\":\"3c9edd4f-49c9-4200-9a45-3c9f0c00bfe9\",\"columns\":[{\"UUID\":\"a11de64b-46e3-4017-983b-040498e3a779\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"8\",\"seedComponents\":[]},{\"UUID\":\"4360452e-efc8-41e0-a327-eb11211d6831\",\"columnName\":\"Column 2\",\"columnKey\":\"b4e25\",\"columnWidth\":\"4\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionConfig" : "{\"UUID\":\"221169ae-4dda-48a6-9feb-7e3fa8ddab54\",\"columns\":[{\"UUID\":\"15c807f6-8699-4681-8ce5-0776d63e3c93\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "dxpStyle" : { },
+                    "richTextValue" : "<p><strong style=\"font-size: 20px;\">About this site</strong></p><p>This site is created using Salesforce Experience Cloud and Salesforce CMS. The underlying framework is using the Education Data Architecture extended with some additional custom objects and automation. The idea started from the \"<a href=\"https://trailhead.salesforce.com/content/learn/projects/build-your-personal-portfolio-on-salesforce\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255);\">Build Your Personal Portfolio on Salesforce</a>\" Trailhead module. Eric wanted a more dynamic site where accomplishments and experiences were updated and added automatically whenever the Salesforce records changed. Rather than update the static text (like this block) everytime something needed to change, the individual records displayed on the other pages are generated from Salesforce data using simple Lightning Web Components. For each record type, there is a child LWC tile component nested inside of a parent list component. The list component uses a wire connector to an Apex Class that is a series of SOQL statements to query the Salesforce data. All of the code for this project can be found in his <a href=\"https://github.com/iAmEricKenney/portfolio/\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub repo</a>.</p>"
+                  },
+                  "definition" : "community_builder:richTextEditor",
+                  "id" : "95b9a366-1a0e-4198-acea-de2b46b51119",
+                  "type" : "component"
+                } ],
+                "id" : "15c807f6-8699-4681-8ce5-0776d63e3c93",
+                "name" : "col1",
+                "title" : "Column 1",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:columns",
+              "id" : "221169ae-4dda-48a6-9feb-7e3fa8ddab54",
+              "type" : "component"
+            } ],
+            "id" : "a11de64b-46e3-4017-983b-040498e3a779",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "richTextValue" : "<p style=\"text-align: center;\"><img src=\"{!cmsMedia.MCZFGXH56AQVHQ3OJG4UXEZ44UPM}\" alt=\"\" width=\"483\"></p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "b3045fef-f21b-40f4-9769-81aaac6cf6d5",
+              "type" : "component"
+            } ],
+            "id" : "4360452e-efc8-41e0-a327-eb11211d6831",
+            "name" : "b4e25",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "3c9edd4f-49c9-4200-9a45-3c9f0c00bfe9",
+          "type" : "component"
+        } ],
+        "id" : "131e9069-9c63-485b-b2a6-6fed0c9111bf",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "Home | Eric Kenney, CSPO, CSM, PSM1 | A Salesforce Professional",
+            "dxpStyle" : { },
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "1fc96759-04d0-4c6f-a357-f285f50e8ad2",
+          "type" : "component"
+        } ],
+        "id" : "e8c3476e-3bb9-4288-8d32-9b510d306caa",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "98c60633-9862-4696-87ec-26fa745dcfe8",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  },
+  "urlName" : "home"
+}

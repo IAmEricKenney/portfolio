@@ -1,0 +1,89 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Certifications",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
+            "sectionConfig" : "{\"UUID\":\"8fcae9f2-6e30-4982-86a5-4d70d5f91579\",\"columns\":[{\"UUID\":\"e26f681f-ec2b-4ffc-9e9b-ae70cc84824f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"4\",\"seedComponents\":[]},{\"UUID\":\"99c663a5-db54-4bd5-ab55-af36156fcf4b\",\"columnName\":\"Column 2\",\"columnKey\":\"2fd50\",\"columnWidth\":\"4\",\"seedComponents\":[]},{\"UUID\":\"db95ebf2-9212-4eaa-9ded-fa70519ae134\",\"columnName\":\"Column 3\",\"columnKey\":\"902f8\",\"columnWidth\":\"4\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:certificationList",
+              "id" : "f4d6bd02-0af3-4178-99b2-81f3489af517",
+              "type" : "component"
+            } ],
+            "id" : "e26f681f-ec2b-4ffc-9e9b-ae70cc84824f",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:superbadgeList",
+              "id" : "0fd58dda-8767-4b0e-aab3-31315a3450cd",
+              "type" : "component"
+            } ],
+            "id" : "99c663a5-db54-4bd5-ab55-af36156fcf4b",
+            "name" : "2fd50",
+            "title" : "Column 2",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:skillsList",
+              "id" : "b5209a00-dbad-4519-9a1e-6c47d02893ad",
+              "type" : "component"
+            } ],
+            "id" : "db95ebf2-9212-4eaa-9ded-fa70519ae134",
+            "name" : "902f8",
+            "title" : "Column 3",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "8fcae9f2-6e30-4982-86a5-4d70d5f91579",
+          "type" : "component"
+        } ],
+        "id" : "a79febe9-5bbe-4063-979d-0975f6ef2462",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "Certifications | Eric Kenney, CSPO, CSM, PSM1 | A Salesforce Professional",
+            "dxpStyle" : { },
+            "pageTitle" : "Certifications",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "3d5bfa74-edbc-4139-a158-507d5e09ce86",
+          "type" : "component"
+        } ],
+        "id" : "9bc6d300-622f-492d-b8b3-c85feacc07e8",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "dc2ea5e7-cfc2-49db-907c-a2e117344088",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-certifications"
+  },
+  "urlName" : "certifications"
+}
