@@ -8,5 +8,5 @@
   "name": "portfolio",
   "namespace": "",
   "sfdcLoginUrl": "https://eric-kenney-portfolio-dev-ed.my.salesforce.com",
-  "sourceApiVersion": "63.0"
+  "sourceApiVersion": "64.0"
 }
