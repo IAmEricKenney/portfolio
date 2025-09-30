@@ -58,3 +58,4 @@ $RECYCLE.BIN/
 .idea
 .project
 .settings
+.sf/config.json
