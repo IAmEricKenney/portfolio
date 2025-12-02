@@ -11,7 +11,8 @@ public with sharing class expController {
         hed__Account__r.Website,
         hed__Account__r.Parent.Parent.Name,
         hed__Account__r.Parent.Parent.Website,
-        hed__Account__r.Parent.Parent.Image_URL__c
+        hed__Account__r.Parent.Parent.Image_URL__c,
+        hed__Account__r.Parent.Parent.Content_Key__c
       FROM hed__Program_Enrollment__c
       ORDER BY hed__End_Date__c DESC
     ];
@@ -27,7 +28,8 @@ public with sharing class expController {
         Certification_URL__c,
         Issuing_Organization__r.Name,
         Asset_URL__c,
-        Image_URL__c
+        Image_URL__c,
+        Content_Key__c
       FROM hed__Test__c
       WHERE hed__Test_Type__c = 'Professional Certification'
       ORDER BY hed__Test_Date__c DESC
@@ -51,7 +53,8 @@ public with sharing class expController {
         Certification_URL__c,
         Issuing_Organization__r.Name,
         Asset_URL__c,
-        Image_URL__c
+        Image_URL__c,
+        Content_Key__c
       FROM hed__Test__c
       WHERE hed__Test_Type__c = 'Skills Assessment'
       ORDER BY hed__Test_Date__c DESC
