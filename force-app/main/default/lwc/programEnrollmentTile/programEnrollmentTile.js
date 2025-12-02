@@ -12,8 +12,12 @@ export default class ProgramEnrollmentTile extends LightningElement {
         return `${startMonth} to ${endMonth}`;
     }
 
+    get hasGPA() {
+        return this.program && this.program.hed__GPA__c !== null && this.program.hed__GPA__c !== undefined && this.program.hed__GPA__c !== '';
+    }
+
     get formattedGPA() {
-        if (!this.program || this.program.hed__GPA__c === null || this.program.hed__GPA__c === undefined) return '';
+        if (!this.hasGPA) return '';
         return this.program.hed__GPA__c.toFixed(3);
     }
 }
