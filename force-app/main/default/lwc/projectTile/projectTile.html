@@ -1,17 +1,14 @@
 <template>
-  <article class="slds-media slds-media_center slds-var-p-around_small slds-var-m-vertical_x-small">
-    <div class="slds-media__figure">
-      <c-cms-image-handler 
-        record-id={project.Id}
-        field-name="Project_Image_Key__c"
-        alternative-text="Project Thumbnail"
-        image-class="slds-image slds-image_cover">
-      </c-cms-image-handler>
+  <article class="slds-card slds-card_boundary">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__body slds-truncate">
+          <h3 class="slds-card__header-title slds-truncate" title={project.Name}>{project.Name}</h3>
+        </div>
+      </header>
     </div>
-    <div class="slds-media__body">
-      <p class="slds-text-heading_small" title="Project Name">{project.Name}</p>
-      <p class="slds-truncate" title="Project Dates">{formattedDates}</p>
-      <lightning-formatted-rich-text value={project.Description__c}></lightning-formatted-rich-text>
+    <div class="slds-card__body">
+      <p>{project.Description__c}</p>
     </div>
   </article>
 </template>

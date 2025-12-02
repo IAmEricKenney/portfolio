@@ -1,14 +1,6 @@
 <template>
   <template if:true={hasCertData}>
     <article class="slds-media slds-media_center slds-var-p-around_small slds-var-m-vertical_x-small">
-      <div class="slds-media__figure">
-        <c-cms-image-handler 
-          record-id={cert.Id}
-          field-name="Content_Key__c"
-          alternative-text="Certification Logo"
-          image-class="slds-avatar slds-avatar_large">
-        </c-cms-image-handler>
-      </div>
       <div class="slds-media__body">
         <p class="slds-text-heading_small" title="Exam Name">
           <a href={cert.Certification_URL__c} target="_blank">{cert.Exam_Name__c}</a>
