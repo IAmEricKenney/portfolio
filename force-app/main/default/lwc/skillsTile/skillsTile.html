@@ -1,7 +1,12 @@
 <template>
   <article class="slds-media slds-media_center slds-var-p-around_small slds-var-m-vertical_x-small">
     <div class="slds-media__figure">
-      <img src={skill.Image_URL__c} alt="Skill Logo" class="slds-avatar slds-avatar_large" />
+      <c-cms-image-handler 
+        record-id={skill.Id}
+        field-name="Content_Key__c"
+        alternative-text="Skill Logo"
+        image-class="slds-avatar slds-avatar_large">
+      </c-cms-image-handler>
     </div>
     <div class="slds-media__body">
       <p class="slds-text-heading_small" title="Exam Name">

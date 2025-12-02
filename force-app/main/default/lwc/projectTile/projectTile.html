@@ -1,5 +1,13 @@
 <template>
   <article class="slds-media slds-media_center slds-var-p-around_small slds-var-m-vertical_x-small">
+    <div class="slds-media__figure">
+      <c-cms-image-handler 
+        record-id={project.Id}
+        field-name="Project_Image_Key__c"
+        alternative-text="Project Thumbnail"
+        image-class="slds-image slds-image_cover">
+      </c-cms-image-handler>
+    </div>
     <div class="slds-media__body">
       <p class="slds-text-heading_small" title="Project Name">{project.Name}</p>
       <p class="slds-truncate" title="Project Dates">{formattedDates}</p>
