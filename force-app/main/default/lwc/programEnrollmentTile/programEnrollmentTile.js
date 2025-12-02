@@ -13,7 +13,7 @@ export default class ProgramEnrollmentTile extends LightningElement {
     }
 
     get formattedGPA() {
-        if (!this.program || this.program.hed__GPA__c === null) return '';
+        if (!this.program || this.program.hed__GPA__c === null || this.program.hed__GPA__c === undefined) return '';
         return this.program.hed__GPA__c.toFixed(3);
     }
 }
