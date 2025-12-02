@@ -1,4 +1,4 @@
-public with sharing class ExpController {
+public with sharing class expController {
   @AuraEnabled(Cacheable=true)
   public static hed__Program_Enrollment__c[] getAllProgEnroll() {
     return [
@@ -54,22 +54,6 @@ public with sharing class ExpController {
         Image_URL__c
       FROM hed__Test__c
       WHERE hed__Test_Type__c = 'Skills Assessment'
-      ORDER BY hed__Test_Date__c DESC
-    ];
-  }
-  @AuraEnabled(Cacheable=true)
-  public static hed__Test__c[] getAllSuperbadges() {
-    return [
-      SELECT
-        Id,
-        Exam_Name__c,
-        hed__Test_Date__c,
-        Certification_URL__c,
-        Issuing_Organization__r.Name,
-        Asset_URL__c,
-        Image_URL__c
-      FROM hed__Test__c
-      WHERE hed__Test_Type__c = 'Superbadge'
       ORDER BY hed__Test_Date__c DESC
     ];
   }
