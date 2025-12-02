@@ -1,22 +1,16 @@
 <template>
-	<article class="slds-card">
-		<div class="slds-card__header slds-grid">
-			<header class="slds-media slds-media_center slds-has-flexi-truncate">
-				<div class="slds-media__body">
-					<h2 class="slds-card__header-title">
-						<lightning-icon icon-name="custom:custom1" alternative-text="Heart" title="custom1">
-						</lightning-icon>
-						&nbsp;&nbsp;&nbsp;Volunteer Experience
-					</h2>
-					<template if:true={volexps.data}>
-						<template for:each={volexps.data} for:item="volexp">
-							<lightning-layout-item key={volexp.Id} size="12" class="slds-var-p-around_x-small">
-								<c-volunteer-tile volexp={volexp}></c-volunteer-tile>
-							</lightning-layout-item>
-						</template>
-					</template>
-				</div>
-			</header>
-		</div>
-	</article>
+  <lightning-card title="Volunteer Experience" icon-name="custom:custom1">
+    <template if:true={hasVolexps}>
+      <div class="slds-var-p-around_small">
+        <template for:each={volexps.data} for:item="volexp">
+          <div key={volexp.Id} class="slds-var-m-vertical_x-small">
+            <c-volunteer-tile volexp={volexp}></c-volunteer-tile>
+          </div>
+        </template>
+      </div>
+    </template>
+    <template if:false={hasVolexps}>
+      <p class="slds-text-body_small slds-var-p-around_small">No volunteer experience found.</p>
+    </template>
+  </lightning-card>
 </template>

@@ -1,46 +1,18 @@
 <template>
-  <div
-    class="slds-box slds-p-around_none slds-var-m-top_x-small slds-var-m-bottom_medium slds-m-horizontal_none"
-  >
-    <lightning-layout multiple-rows>
-      <lightning-layout-item
-        size="12"
-        small-device-size="12"
-        medium-device-size="2"
-      >
-        <ul class="slds-has-dividers_around-space">
-          <li class="slds-item">
-            <article class="slds-tile slds-tile_board">
-              <img src={skill.Image_URL__c} height="71px" width="71px" />
-            </article>
-          </li>
-        </ul>
-      </lightning-layout-item>
-      <lightning-layout-item
-        size="12"
-        small-device-size="12"
-        medium-device-size="10"
-      >
-        <ul class="slds-has-dividers_around-space">
-          <li class="slds-item">
-            <article class="slds-tile slds-tile_board">
-              <p class="slds-text-heading_small" title="Exam Name">
-                <a href={skill.Certification_URL__c} target="_blank"
-                  >{skill.Exam_Name__c}</a
-                >
-              </p>
-              <p class="slds-truncate" title="Organization">
-                {skill.Issuing_Organization__r.Name}
-              </p>
-              <p class="slds-truncate" title="Test Date">
-                <a href={skill.Asset_URL__c} target="_blank"
-                  >Completion Date: {skill.hed__Test_Date__c}</a
-                >
-              </p>
-            </article>
-          </li>
-        </ul>
-      </lightning-layout-item>
-    </lightning-layout>
-  </div>
+  <article class="slds-media slds-media_center slds-var-p-around_small slds-var-m-vertical_x-small">
+    <div class="slds-media__figure">
+      <img src={skill.Image_URL__c} alt="Skill Logo" class="slds-avatar slds-avatar_large" />
+    </div>
+    <div class="slds-media__body">
+      <p class="slds-text-heading_small" title="Exam Name">
+        <a href={skill.Certification_URL__c} target="_blank">{skill.Exam_Name__c}</a>
+      </p>
+      <p class="slds-truncate" title="Organization">
+        {skill.Issuing_Organization__r.Name}
+      </p>
+      <p class="slds-truncate" title="Completion Date">
+        <a href={skill.Asset_URL__c} target="_blank">Completion Date: {formattedDate}</a>
+      </p>
+    </div>
+  </article>
 </template>

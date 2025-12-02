@@ -1,30 +1,16 @@
 <template>
-  <article class="slds-card">
-    <div class="slds-card__header slds-grid">
-      <header class="slds-media slds-media_center slds-has-flexi-truncate">
-        <div class="slds-media__body">
-          <h2 class="slds-card__header-title">
-            <lightning-icon
-              icon-name="standard:reward"
-              alternative-text="Reward"
-              title="Reward"
-            >
-            </lightning-icon>
-            &nbsp;&nbsp;&nbsp; Certifications
-          </h2>
-          <template if:true={certs.data}>
-            <template for:each={certs.data} for:item="cert">
-              <lightning-layout-item
-                key={cert.Id}
-                size="12"
-                class="slds-var-p-around_x-small"
-              >
-                <c-certification-tile cert={cert}></c-certification-tile>
-              </lightning-layout-item>
-            </template>
-          </template>
-        </div>
-      </header>
-    </div>
-  </article>
+  <lightning-card title="Certifications" icon-name="standard:reward">
+    <template if:true={hasCerts}>
+      <div class="slds-var-p-around_small">
+        <template for:each={certs.data} for:item="cert">
+          <div key={cert.Id} class="slds-var-m-vertical_x-small">
+            <c-certification-tile cert={cert}></c-certification-tile>
+          </div>
+        </template>
+      </div>
+    </template>
+    <template if:false={hasCerts}>
+      <p class="slds-text-body_small slds-var-p-around_small">No certifications found.</p>
+    </template>
+  </lightning-card>
 </template>

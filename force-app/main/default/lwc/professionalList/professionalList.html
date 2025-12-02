@@ -1,23 +1,16 @@
 <template>
-	<article class="slds-card">
-		<div class="slds-card__header slds-grid">
-			<header class="slds-media slds-media_center slds-has-flexi-truncate">
-				<div class="slds-media__body">
-					<h2 class="slds-card__header-title">
-						<lightning-icon icon-name="standard:job_profile" alternative-text="Job Profile"
-							title="Job Profile">
-						</lightning-icon>
-						&nbsp;&nbsp;&nbsp;Professional Experience
-					</h2>
-					<template if:true={profexps.data}>
-						<template for:each={profexps.data} for:item="profexp">
-							<lightning-layout-item key={profexp.Id} size="12" class="slds-var-p-around_x-small">
-								<c-professional-tile profexp={profexp}></c-professional-tile>
-							</lightning-layout-item>
-						</template>
-					</template>
-				</div>
-			</header>
-		</div>
-	</article>
+  <lightning-card title="Professional Experience" icon-name="standard:job_profile">
+    <template if:true={hasProfExps}>
+      <div class="slds-var-p-around_small">
+        <template for:each={profexps.data} for:item="profexp">
+          <div key={profexp.Id} class="slds-var-m-vertical_x-small">
+            <c-professional-tile profexp={profexp}></c-professional-tile>
+          </div>
+        </template>
+      </div>
+    </template>
+    <template if:false={hasProfExps}>
+      <p class="slds-text-body_small slds-var-p-around_small">No professional experience found.</p>
+    </template>
+  </lightning-card>
 </template>

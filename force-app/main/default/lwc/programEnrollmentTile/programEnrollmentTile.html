@@ -1,65 +1,19 @@
 <template>
-  <div
-    class="slds-box slds-p-around_none slds-var-m-top_x-small slds-var-m-bottom_medium slds-m-horizontal_none"
-  >
-    <lightning-layout multiple-rows>
-      <lightning-layout-item
-        size="12"
-        small-device-size="12"
-        medium-device-size="2"
-      >
-        <ul class="slds-has-dividers_around-space">
-          <li class="slds-item">
-            <article class="slds-tile slds-tile_board">
-              <img
-                src={program.hed__Account__r.Parent.Parent.Image_URL__c}
-                height="50%"
-                width="50%"
-              />
-            </article>
-          </li>
-        </ul>
-      </lightning-layout-item>
-      <lightning-layout-item
-        size="12"
-        small-device-size="12"
-        medium-device-size="10"
-      >
-        <ul class="slds-has-dividers_around-space">
-          <li class="slds-item">
-            <article class="slds-tile slds-tile_board">
-              <p class="slds-text-heading_small" title="Program Name">
-                <a href={program.hed__Account__r.Website} target="_blank">
-                  {program.hed__Account__r.Name}</a
-                >
-              </p>
-              <p class="slds-truncate" title="School">
-                <a
-                  href={program.hed__Account__r.Parent.Parent.Website}
-                  target="_blank"
-                >
-                  {program.hed__Account__r.Parent.Parent.Name}</a
-                >
-              </p>
-              <p class="slds-truncate" title="Start Date">
-                Start Date: {program.hed__Start_Date__c}
-              </p>
-              <p class="slds-truncate" title="End Date">
-                End Date: {program.hed__End_Date__c}
-              </p>
-              <p class="slds-truncate" title="GPA">
-                GPA:&nbsp;
-                <lightning-formatted-number
-                  value={program.hed__GPA__c}
-                  format-style="decimal"
-                  minimum-fraction-digits="3"
-                >
-                </lightning-formatted-number>
-              </p>
-            </article>
-          </li>
-        </ul>
-      </lightning-layout-item>
-    </lightning-layout>
-  </div>
+  <article class="slds-media slds-media_center slds-var-p-around_small slds-var-m-vertical_x-small">
+    <div class="slds-media__figure">
+      <img src={program.hed__Account__r.Parent.Parent.Image_URL__c} alt="Institution Logo" class="slds-avatar slds-avatar_large" />
+    </div>
+    <div class="slds-media__body">
+      <p class="slds-text-heading_small" title="Program Name">
+        <a href={program.hed__Account__r.Website} target="_blank">{program.hed__Account__r.Name}</a>
+      </p>
+      <p class="slds-truncate" title="School">
+        <a href={program.hed__Account__r.Parent.Parent.Website} target="_blank">
+          {program.hed__Account__r.Parent.Parent.Name}
+        </a>
+      </p>
+      <p class="slds-truncate" title="Duration">{formattedDates}</p>
+      <p class="slds-truncate" title="GPA">GPA: {formattedGPA}</p>
+    </div>
+  </article>
 </template>
