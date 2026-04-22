@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>hed__Certificate</fullName>
     <active>true</active>
-    <compactLayoutAssignment
-  >hed__EDA_Academic_Certification_Compact_Layout</compactLayoutAssignment>
-    <description
-  >A certification related to the completion of specific courses.</description>
+    <compactLayoutAssignment>hed__EDA_Academic_Certification_Compact_Layout</compactLayoutAssignment>
+    <description>A certification related to the completion of specific courses.</description>
     <label>Certificate</label>
     <picklistValues>
         <picklist>hed__Academic_Level__c</picklist>

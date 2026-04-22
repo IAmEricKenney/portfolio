@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>hed__Source__c</fullName>
     <deprecated>false</deprecated>
-    <description
-  >Indicates whether the applicant or an official source reported this test.</description>
-    <externalId>false</externalId>
-    <inlineHelpText
-  >Indicates whether the applicant or an official source reported this test.</inlineHelpText>
+    <description>Indicates whether the applicant or an official source reported this test.</description>
+    <inlineHelpText>Indicates whether the applicant or an official source reported this test.</inlineHelpText>
     <label>Source</label>
     <required>false</required>
     <trackTrending>false</trackTrending>

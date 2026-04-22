@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>hed__Enrollment_Status__c</fullName>
     <deprecated>false</deprecated>
-    <description
-  >The student&apos;s enrollment status, for example, full-time or half-time.</description>
-    <externalId>false</externalId>
-    <inlineHelpText
-  >The student&apos;s enrollment status, for example, full-time or half-time.</inlineHelpText>
+    <description>The student&apos;s enrollment status, for example, full-time or half-time.</description>
+    <inlineHelpText>The student&apos;s enrollment status, for example, full-time or half-time.</inlineHelpText>
     <label>Enrollment Status</label>
     <required>false</required>
     <trackTrending>false</trackTrending>

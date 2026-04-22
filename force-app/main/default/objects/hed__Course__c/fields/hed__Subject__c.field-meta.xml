@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>hed__Subject__c</fullName>
     <deprecated>false</deprecated>
     <description>The subject matter of the Course.</description>
-    <externalId>false</externalId>
     <inlineHelpText>The subject matter of the Course.</inlineHelpText>
     <label>Subject</label>
     <required>false</required>
@@ -48,8 +47,7 @@
                 <label>General Studies and Humanities</label>
             </value>
             <value>
-                <fullName
-        >Geography and Geographic Information Systems</fullName>
+                <fullName>Geography and Geographic Information Systems</fullName>
                 <default>false</default>
                 <label>Geography and Geographic Information Systems</label>
             </value>

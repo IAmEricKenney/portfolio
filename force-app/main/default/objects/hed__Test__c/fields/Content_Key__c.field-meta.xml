@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Content_Key__c</fullName>
-    <description
-  >Populated with the Content Key from Salesforce CMS</description>
+    <description>Populated with the Content Key from Salesforce CMS</description>
     <externalId>false</externalId>
     <label>Content Key</label>
     <length>40</length>

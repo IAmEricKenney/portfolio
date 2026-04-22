@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>hed__Class_Standing__c</fullName>
     <deprecated>false</deprecated>
-    <description
-  >The student&apos;s level in a Program, for example, Freshman, Sophomore, Junior, or Senior.</description>
-    <externalId>false</externalId>
-    <inlineHelpText
-  >The student&apos;s level in a Program, for example, Freshman, Sophomore, Junior, or Senior.</inlineHelpText>
+    <description>The student&apos;s level in a Program, for example, Freshman, Sophomore, Junior, or Senior.</description>
+    <inlineHelpText>The student&apos;s level in a Program, for example, Freshman, Sophomore, Junior, or Senior.</inlineHelpText>
     <label>Class Standing</label>
     <required>false</required>
     <trackTrending>false</trackTrending>

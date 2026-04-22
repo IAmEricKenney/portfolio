@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>Accept</actionName>
@@ -128,19 +128,17 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment
-    >Action override created by Lightning App Builder during activation.</comment>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>Test_Score_Record_Page</content>
-        <formFactor>Large</formFactor>
+        <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment
-    >Action override created by Lightning App Builder during activation.</comment>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>Test_Score_Record_Page</content>
-        <formFactor>Small</formFactor>
+        <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
     </actionOverrides>
@@ -152,8 +150,7 @@
     <compactLayoutAssignment>Test_Score_Compact_Layout</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <description
-  >The score on a section of a specific test or a composite score.</description>
+    <description>The score on a section of a specific test or a composite score.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -173,18 +170,12 @@
     <pluralLabel>Test Scores</pluralLabel>
     <searchLayouts>
         <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
-        <searchResultsAdditionalFields
-    >hed__Test_Type__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >hed__Test__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >Subject_Area__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >Section_Percentage__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >Score_Percentage__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >Correct_Questions__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>hed__Test_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>hed__Test__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Subject_Area__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Section_Percentage__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Score_Percentage__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Correct_Questions__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

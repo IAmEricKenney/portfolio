@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>hed__GPA_Scale_Reporting__c</fullName>
     <deprecated>false</deprecated>
-    <description
-  >The highest possible grade point average at this Educational Institution.</description>
-    <externalId>false</externalId>
-    <inlineHelpText
-  >The highest possible grade point average at this Educational Institution.</inlineHelpText>
+    <description>The highest possible grade point average at this Educational Institution.</description>
+    <inlineHelpText>The highest possible grade point average at this Educational Institution.</inlineHelpText>
     <label>GPA Scale Reporting</label>
     <required>false</required>
     <trackTrending>false</trackTrending>

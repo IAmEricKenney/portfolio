@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>Accept</actionName>
@@ -128,19 +128,17 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment
-    >Action override created by Lightning App Builder during activation.</comment>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>EDA_Academic_Certification_Record_Page1</content>
-        <formFactor>Large</formFactor>
+        <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment
-    >Action override created by Lightning App Builder during activation.</comment>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>EDA_Academic_Certification_Record_Page1</content>
-        <formFactor>Small</formFactor>
+        <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
     </actionOverrides>
@@ -149,12 +147,10 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment
-  >hed__EDA_Academic_Certification_Compact_Layout</compactLayoutAssignment>
+    <compactLayoutAssignment>hed__EDA_Academic_Certification_Compact_Layout</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <description
-  >Represents an academic certificate, degree, or diploma.</description>
+    <description>Represents an academic certificate, degree, or diploma.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -172,14 +168,10 @@
     </nameField>
     <pluralLabel>Academic Certifications</pluralLabel>
     <searchLayouts>
-        <searchResultsAdditionalFields
-    >hed__Issuer__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >RECORDTYPE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >hed__Academic_Level__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields
-    >hed__Field_Of_Study__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>hed__Issuer__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>hed__Academic_Level__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>hed__Field_Of_Study__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <startsWith>Vowel</startsWith>

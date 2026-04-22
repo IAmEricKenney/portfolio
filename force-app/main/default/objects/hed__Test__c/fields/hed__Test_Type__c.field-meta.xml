@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>hed__Test_Type__c</fullName>
     <deprecated>false</deprecated>
     <description>The formal name for the test taken.</description>
-    <externalId>false</externalId>
     <inlineHelpText>The formal name for the test taken.</inlineHelpText>
     <label>Test Type</label>
     <required>false</required>
@@ -21,11 +20,6 @@
                 <fullName>Skills Assessment</fullName>
                 <default>false</default>
                 <label>Skills Assessment</label>
-            </value>
-            <value>
-                <fullName>Superbadge</fullName>
-                <default>false</default>
-                <label>Superbadge</label>
             </value>
         </valueSetDefinition>
     </valueSet>

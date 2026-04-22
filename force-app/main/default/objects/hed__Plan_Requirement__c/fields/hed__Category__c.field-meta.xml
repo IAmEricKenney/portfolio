@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>hed__Category__c</fullName>
     <deprecated>false</deprecated>
-    <description
-  >Indicates the type of Plan Requirement, for example, optional or required.</description>
-    <externalId>false</externalId>
-    <inlineHelpText
-  >Indicates the type of Plan Requirement, for example, optional or required.</inlineHelpText>
+    <description>Indicates the type of Plan Requirement, for example, optional or required.</description>
+    <inlineHelpText>Indicates the type of Plan Requirement, for example, optional or required.</inlineHelpText>
     <label>Category</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
