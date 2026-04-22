@@ -7,11 +7,11 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Name</fieldItem>
-                <identifier>RecordNameField2</identifier>
+                <fieldItem>Record.hed__Account__c</fieldItem>
+                <identifier>Recordhed_Account_cField2</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-55b77487-7656-4ee5-9a61-241213f91640</name>
+        <name>Facet-b36b8d73-d7c2-4401-8ef4-9bcf811527e3</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -21,8 +21,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Start_Date__c</fieldItem>
-                <identifier>RecordStart_Date_cField2</identifier>
+                <fieldItem>Record.hed__Contact__c</fieldItem>
+                <identifier>Recordhed_Contact_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -31,8 +31,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.End_Date__c</fieldItem>
-                <identifier>RecordEnd_Date_cField2</identifier>
+                <fieldItem>Record.hed__Education_History__c</fieldItem>
+                <identifier>Recordhed_Education_History_cField2</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -41,8 +41,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.RecordTypeId</fieldItem>
-                <identifier>RecordRecordTypeIdField</identifier>
+                <fieldItem>Record.hed__Program_Plan__c</fieldItem>
+                <identifier>Recordhed_Program_Plan_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -51,11 +51,11 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Project_URL__c</fieldItem>
-                <identifier>RecordProject_URL_cField2</identifier>
+                <fieldItem>Record.hed__Affiliation__c</fieldItem>
+                <identifier>Recordhed_Affiliation_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-be59cd80-e9da-4fc9-accc-ef2ad6f32004</name>
+        <name>Facet-408d4add-72ec-4187-9e66-9413873aa90e</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -73,9 +73,6 @@
                         <valueListItems>
                             <value>Clone</value>
                         </valueListItems>
-                        <valueListItems>
-                            <value>ChangeRecordType</value>
-                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -84,11 +81,11 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>primaryField</name>
-                    <value>Facet-55b77487-7656-4ee5-9a61-241213f91640</value>
+                    <value>Facet-b36b8d73-d7c2-4401-8ef4-9bcf811527e3</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>secondaryFields</name>
-                    <value>Facet-be59cd80-e9da-4fc9-accc-ef2ad6f32004</value>
+                    <value>Facet-408d4add-72ec-4187-9e66-9413873aa90e</value>
                 </componentInstanceProperties>
                 <componentName>record_flexipage:dynamicHighlights</componentName>
                 <identifier>record_flexipage_dynamicHighlights</identifier>
@@ -99,10 +96,80 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>New</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>maxRecordsToDisplay</name>
+                    <value>20</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>hed__Program_Enrollment__c.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>hed__Course_Enrollments__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListDisplayType</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListFieldAliases</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>NAME</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Course_Name__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>hed__Display_Grade__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>hed__Credits_Attempted__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>hed__Credits_Earned__c</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListLabel</name>
+                    <value>Course Connections</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldAlias</name>
+                    <value>Term_Code__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldOrder</name>
+                    <value>Ascending</value>
+                </componentInstanceProperties>
+                <componentName>lst:dynamicRelatedList</componentName>
+                <identifier>lst_dynamicRelatedList</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-abf9c7bd-9b39-4ab6-a524-c52e61241841</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>required</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Name</fieldItem>
                 <identifier>RecordNameField</identifier>
@@ -112,10 +179,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Contact__c</fieldItem>
-                <identifier>RecordContact_cField</identifier>
+                <fieldItem>Record.hed__Contact__c</fieldItem>
+                <identifier>Recordhed_Contact_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -124,8 +191,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Start_Date__c</fieldItem>
-                <identifier>RecordStart_Date_cField</identifier>
+                <fieldItem>Record.hed__Start_Date__c</fieldItem>
+                <identifier>Recordhed_Start_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -134,21 +201,11 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.End_Date__c</fieldItem>
-                <identifier>RecordEnd_Date_cField</identifier>
+                <fieldItem>Record.hed__End_Date__c</fieldItem>
+                <identifier>Recordhed_End_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Project_URL__c</fieldItem>
-                <identifier>RecordProject_URL_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-8dfb8373-55c1-455b-8689-5cd36c933673</name>
+        <name>Facet-72cbe74b-fa55-4c46-977d-a4a3f9a7783f</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -158,11 +215,51 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Description__c</fieldItem>
-                <identifier>RecordDescription_cField</identifier>
+                <fieldItem>Record.hed__Education_History__c</fieldItem>
+                <identifier>Recordhed_Education_History_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-529df001-2b94-4759-9c11-6d158fbda289</name>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.hed__Account__c</fieldItem>
+                <identifier>Recordhed_Account_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.hed__Credits_Attempted__c</fieldItem>
+                <identifier>Recordhed_Credits_Attempted_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.hed__Credits_Earned__c</fieldItem>
+                <identifier>Recordhed_Credits_Earned_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.hed__GPA__c</fieldItem>
+                <identifier>Recordhed_GPA_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-87120cfc-b468-4c26-8dc0-d1ddf8ec3dbb</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -170,7 +267,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-8dfb8373-55c1-455b-8689-5cd36c933673</value>
+                    <value>Facet-72cbe74b-fa55-4c46-977d-a4a3f9a7783f</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
                 <identifier>flexipage_column</identifier>
@@ -180,13 +277,13 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-529df001-2b94-4759-9c11-6d158fbda289</value>
+                    <value>Facet-87120cfc-b468-4c26-8dc0-d1ddf8ec3dbb</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column3</identifier>
+                <identifier>flexipage_column2</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-85941be7-0a26-490f-ae70-c69314f27d79</name>
+        <name>Facet-f2dda044-614b-466a-a295-9233d19ebf16</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -200,6 +297,10 @@
                 <identifier>RecordCreatedByIdField</identifier>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-40f351ec-d2e5-4d36-be3d-bb6011324473</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -210,21 +311,7 @@
                 <identifier>RecordLastModifiedByIdField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-3460b118-d887-45d0-b459-0ee86fa636bc</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.OwnerId</fieldItem>
-                <identifier>RecordOwnerIdField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-07417f95-ae7b-4bc3-8b40-2ad78f936231</name>
+        <name>Facet-5dd794bd-44dd-4cc4-a3b6-d33e30bdc472</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -232,23 +319,23 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-3460b118-d887-45d0-b459-0ee86fa636bc</value>
+                    <value>Facet-40f351ec-d2e5-4d36-be3d-bb6011324473</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column2</identifier>
+                <identifier>flexipage_column3</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-07417f95-ae7b-4bc3-8b40-2ad78f936231</value>
+                    <value>Facet-5dd794bd-44dd-4cc4-a3b6-d33e30bdc472</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
                 <identifier>flexipage_column4</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-eb53c58d-d8bb-4b02-b1f7-7b70e0201511</name>
+        <name>Facet-7b6481fd-0eb0-4cde-bbe4-7b731a1f07a6</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -256,7 +343,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
-                    <value>Facet-85941be7-0a26-490f-ae70-c69314f27d79</value>
+                    <value>Facet-f2dda044-614b-466a-a295-9233d19ebf16</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>horizontalAlignment</name>
@@ -274,7 +361,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>columns</name>
-                    <value>Facet-eb53c58d-d8bb-4b02-b1f7-7b70e0201511</value>
+                    <value>Facet-7b6481fd-0eb0-4cde-bbe4-7b731a1f07a6</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>horizontalAlignment</name>
@@ -288,13 +375,7 @@
                 <identifier>flexipage_fieldSection2</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>force:recordDetailPanelMobile</componentName>
-                <identifier>force_recordDetailPanelMobile</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>detailTabContent</name>
+        <name>Facet-5bfb7a6d-9686-49d4-9c1a-9147268ab459</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -306,17 +387,31 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>detailTabContent</value>
+                    <value>Facet-abf9c7bd-9b39-4ab6-a524-c52e61241841</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.relatedLists</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-5bfb7a6d-9686-49d4-9c1a-9147268ab459</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
                     <value>Standard.Tab.detail</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>detailTab</identifier>
+                <identifier>flexipage_tab2</identifier>
             </componentInstance>
         </itemInstances>
-        <name>maintabs</name>
+        <name>Facet-d5f2c157-e234-4f21-88d8-f431747ecd1c</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -328,17 +423,23 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
-                    <value>maintabs</value>
+                    <value>Facet-d5f2c157-e234-4f21-88d8-f431747ecd1c</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
                 <identifier>flexipage_tabset</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>force:recordDetailPanelMobile</componentName>
+                <identifier>force_recordDetailPanelMobile</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Project Record Page</masterLabel>
-    <sobjectType>Project__c</sobjectType>
+    <masterLabel>Program Enrollment Record Page</masterLabel>
+    <sobjectType>hed__Program_Enrollment__c</sobjectType>
     <template>
         <name>flexipage:recordHomeSimpleViewTemplate</name>
     </template>
