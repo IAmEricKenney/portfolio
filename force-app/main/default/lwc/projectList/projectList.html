@@ -1,6 +1,6 @@
 <template>
   <lightning-card title="Projects" icon-name="standard:work_plan_template_entry">
-    <template if:true={hasProjects}>
+    <template lwc:if={hasProjects}>
       <div class="slds-var-p-around_small">
         <template for:each={projects.data} for:item="project">
           <div key={project.Id} class="slds-var-m-vertical_x-small">
@@ -9,7 +9,12 @@
         </template>
       </div>
     </template>
-    <template if:false={hasProjects}>
+    <template lwc:elseif={hasError}>
+      <p class="slds-text-color_error slds-var-p-around_small">
+        Error loading projects: {projects.error.body.message}
+      </p>
+    </template>
+    <template lwc:else>
       <p class="slds-text-body_small slds-var-p-around_small">No projects found.</p>
     </template>
   </lightning-card>

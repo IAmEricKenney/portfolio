@@ -1,6 +1,6 @@
 <template>
   <lightning-card title="Volunteer Experience" icon-name="custom:custom1">
-    <template if:true={hasVolexps}>
+    <template lwc:if={hasVolexps}>
       <div class="slds-var-p-around_small">
         <template for:each={volexps.data} for:item="volexp">
           <div key={volexp.Id} class="slds-var-m-vertical_x-small">
@@ -9,7 +9,12 @@
         </template>
       </div>
     </template>
-    <template if:false={hasVolexps}>
+    <template lwc:elseif={hasError}>
+      <p class="slds-text-color_error slds-var-p-around_small">
+        Error loading volunteer experience: {volexps.error.body.message}
+      </p>
+    </template>
+    <template lwc:else>
       <p class="slds-text-body_small slds-var-p-around_small">No volunteer experience found.</p>
     </template>
   </lightning-card>

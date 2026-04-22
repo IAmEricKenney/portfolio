@@ -5,7 +5,9 @@
       <p class="slds-truncate" title="Organization">
         <a href={volexp.Organization__r.Website} target="_blank">{volexp.Organization__r.Name}</a>
       </p>
-      <p class="slds-truncate" title="Dates">{formattedDates}</p>
+      <template lwc:if={formattedDates}>
+        <p class="slds-truncate" title="Dates">{formattedDates}</p>
+      </template>
       <lightning-formatted-rich-text value={volexp.Description__c}></lightning-formatted-rich-text>
     </div>
   </article>

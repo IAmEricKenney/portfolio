@@ -1,8 +1,27 @@
 <template>
-  <article class="slds-media slds-media_center slds-var-p-around_small slds-var-m-vertical_x-small">
-    <div class="slds-media__body">
-      <h3 class="slds-text-heading_small">{skill.Name}</h3>
-      <p class="slds-truncate" title={skill.Description__c}>{skill.Description__c}</p>
+  <article class="slds-grid slds-gutters_small slds-align-middle slds-var-p-around_small slds-var-m-vertical_x-small">
+    
+    <div class="slds-col slds-size_1-of-5 slds-align-middle">
+      <template lwc:if={imageUrl}>
+        <img src={imageUrl} alt={skill.Exam_Name__c} style="max-width: 100%; height: auto; border-radius: 4px;" />
+      </template>
     </div>
+    
+    <div class="slds-col slds-size_4-of-5">
+      <h3 class="slds-text-heading_small">
+        <a href={skill.Asset_URL__c} target="_blank">{skill.Exam_Name__c}</a>
+      </h3>
+      
+      <template lwc:if={skill.Issuing_Organization__r}>
+          <p class="slds-truncate" title={skill.Issuing_Organization__r.Name}>
+              <a href={skill.Certification_URL__c} target="_blank">{skill.Issuing_Organization__r.Name}</a>
+          </p>
+      </template>
+      
+      <template lwc:if={formattedDate}>
+        <p class="slds-text-body_small slds-text-color_weak">{formattedDate}</p>
+      </template>
+    </div>
+    
   </article>
 </template>

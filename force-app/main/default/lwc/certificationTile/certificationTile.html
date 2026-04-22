@@ -1,20 +1,37 @@
 <template>
-  <template if:true={hasCertData}>
-    <article class="slds-media slds-media_center slds-var-p-around_small slds-var-m-vertical_x-small">
-      <div class="slds-media__body">
-        <p class="slds-text-heading_small" title="Exam Name">
-          <a href={cert.Certification_URL__c} target="_blank">{cert.Exam_Name__c}</a>
-        </p>
-        <p class="slds-truncate" title="Issuing Organization">
-          {cert.Issuing_Organization__r.Name}
-        </p>
-        <p class="slds-truncate" title="Test Date">
-          Test Date: {formattedDate}
-        </p>
-        <p class="slds-truncate" title="Credential ID">
-          <a href={cert.Asset_URL__c} target="_blank">Credential ID: {cert.Credential_ID__c}</a>
-        </p>
+  <template lwc:if={hasCertData}>
+    <article class="slds-grid slds-gutters_small slds-align-middle slds-var-p-around_small slds-var-m-vertical_x-small">
+      
+      <div class="slds-col slds-size_1-of-5 slds-align-middle">
+        <template lwc:if={imageUrl}>
+          <img src={imageUrl} alt={cert.Exam_Name__c} style="max-width: 100%; height: auto; border-radius: 4px;" />
+        </template>
       </div>
+      
+      <div class="slds-col slds-size_4-of-5">
+        <p class="slds-text-heading_small" title="Exam Name">
+          <a href={cert.Asset_URL__c} target="_blank">{cert.Exam_Name__c}</a>
+        </p>
+        
+        <template lwc:if={cert.Issuing_Organization__r}>
+          <p class="slds-truncate" title="Issuing Organization">
+            <a href={cert.Certification_URL__c} target="_blank">{cert.Issuing_Organization__r.Name}</a>
+          </p>
+        </template>
+        
+        <template lwc:if={formattedDate}>
+          <p class="slds-truncate" title="Test Date">
+            Test Date: {formattedDate}
+          </p>
+        </template>
+        
+        <template lwc:if={cert.Credential_ID__c}>
+          <p class="slds-truncate" title="Credential ID">
+            <a href={cert.Asset_URL__c} target="_blank">Credential ID: {cert.Credential_ID__c}</a>
+          </p>
+        </template>
+      </div>
+      
     </article>
   </template>
 </template>

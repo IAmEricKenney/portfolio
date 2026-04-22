@@ -7,4 +7,8 @@ export default class SkillsList extends LightningElement {
   get hasSkills() {
     return this.skills?.data && this.skills.data.length > 0;
   }
+
+  get hasError() {
+    return this.skills?.error;
+  }
 }

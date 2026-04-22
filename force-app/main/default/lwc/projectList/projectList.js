@@ -7,4 +7,8 @@ export default class ProjectList extends LightningElement {
   get hasProjects() {
     return this.projects?.data && this.projects.data.length > 0;
   }
+
+  get hasError() {
+    return this.projects?.error;
+  }
 }

@@ -7,4 +7,8 @@ export default class ProgramEnrollmentList extends LightningElement {
   get hasPrograms() {
     return this.programs?.data && this.programs.data.length > 0;
   }
+
+  get hasError() {
+    return this.programs?.error;
+  }
 }

@@ -1,25 +1,21 @@
 <template>
-	<article class="slds-card">
-		<div class="slds-card__header slds-grid">
-			<header class="slds-media slds-media_center slds-has-flexi-truncate">
-				<div class="slds-media__body">
-					<h2 class="slds-card__header-title">
-						<lightning-icon icon-name="standard:education" alternative-text="Education" title="Education">
-						</lightning-icon>
-						&nbsp;&nbsp;&nbsp;Degrees and Certificates
-					</h2>
-					<template if:true={hasPrograms}>
-						<template for:each={programs.data} for:item="program">
-							<lightning-layout-item key={program.Id} size="12" class="slds-var-p-around_x-small">
-								<c-program-enrollment-tile program={program}></c-program-enrollment-tile>
-							</lightning-layout-item>
-						</template>
-					</template>
-					<template if:false={hasPrograms}>
-						<p class="slds-text-body_small slds-var-p-around_small">No education records found.</p>
-					</template>
-				</div>
-			</header>
-		</div>
-	</article>
+  <lightning-card title="Degrees and Certificates" icon-name="standard:education">
+    <template lwc:if={hasPrograms}>
+      <div class="slds-var-p-around_small">
+        <template for:each={programs.data} for:item="program">
+          <div key={program.Id} class="slds-var-m-vertical_x-small">
+            <c-program-enrollment-tile program={program}></c-program-enrollment-tile>
+          </div>
+        </template>
+      </div>
+    </template>
+    <template lwc:elseif={hasError}>
+      <p class="slds-text-color_error slds-var-p-around_small">
+        Error loading education records: {programs.error.body.message}
+      </p>
+    </template>
+    <template lwc:else>
+      <p class="slds-text-body_small slds-var-p-around_small">No education records found.</p>
+    </template>
+  </lightning-card>
 </template>

@@ -7,4 +7,8 @@ export default class ProfessionalList extends LightningElement {
   get hasProfExps() {
     return this.profexps?.data && this.profexps.data.length > 0;
   }
+
+  get hasError() {
+    return this.profexps?.error;
+  }
 }

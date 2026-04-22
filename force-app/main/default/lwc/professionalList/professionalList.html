@@ -1,6 +1,6 @@
 <template>
   <lightning-card title="Professional Experience" icon-name="standard:job_profile">
-    <template if:true={hasProfExps}>
+    <template lwc:if={hasProfExps}>
       <div class="slds-var-p-around_small">
         <template for:each={profexps.data} for:item="profexp">
           <div key={profexp.Id} class="slds-var-m-vertical_x-small">
@@ -9,7 +9,12 @@
         </template>
       </div>
     </template>
-    <template if:false={hasProfExps}>
+    <template lwc:elseif={hasError}>
+      <p class="slds-text-color_error slds-var-p-around_small">
+        Error loading experience: {profexps.error.body.message}
+      </p>
+    </template>
+    <template lwc:else>
       <p class="slds-text-body_small slds-var-p-around_small">No professional experience found.</p>
     </template>
   </lightning-card>

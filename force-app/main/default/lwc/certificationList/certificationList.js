@@ -7,4 +7,8 @@ export default class CertificationList extends LightningElement {
   get hasCerts() {
     return this.certs?.data && this.certs.data.length > 0;
   }
+
+  get hasError() {
+    return this.certs?.error;
+  }
 }

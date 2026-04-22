@@ -20,4 +20,20 @@ export default class ProgramEnrollmentTile extends LightningElement {
         if (!this.hasGPA) return '';
         return this.program.hed__GPA__c.toFixed(3);
     }
+
+    // New getter to drill down into the parent Account for the image
+    get imageUrl() {
+        // Safely navigate the relationship tree using optional chaining
+        const schoolAccount = this.program?.hed__Account__r?.Parent?.Parent;
+        
+        if (!schoolAccount) return '';
+
+        // Prioritize the relative CMS Content Key path
+        if (schoolAccount.Content_Key__c) {
+            return `/sfsites/c/cms/delivery/media/${schoolAccount.Content_Key__c}`;
+        }
+        
+        // Fallback to the absolute URL field
+        return schoolAccount.Image_URL__c;
+    }
 }

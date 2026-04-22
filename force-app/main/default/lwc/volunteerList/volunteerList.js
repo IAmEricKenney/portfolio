@@ -7,4 +7,8 @@ export default class VolunteerList extends LightningElement {
   get hasVolexps() {
     return this.volexps?.data && this.volexps.data.length > 0;
   }
+
+  get hasError() {
+    return this.volexps?.error;
+  }
 }

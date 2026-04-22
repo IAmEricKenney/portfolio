@@ -5,7 +5,9 @@
       <p class="slds-truncate" title="Employer">
         <a href={profexp.Organization__r.Website} target="_blank">{profexp.Organization__r.Name}</a>
       </p>
-      <p class="slds-truncate" title="Employment Dates">{formattedDates}</p>
+      <template lwc:if={formattedDates}>
+        <p class="slds-truncate" title="Employment Dates">{formattedDates}</p>
+      </template>
       <lightning-formatted-rich-text value={profexp.Description__c}></lightning-formatted-rich-text>
     </div>
   </article>

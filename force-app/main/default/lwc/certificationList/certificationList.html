@@ -1,6 +1,6 @@
 <template>
   <lightning-card title="Certifications" icon-name="standard:reward">
-    <template if:true={hasCerts}>
+    <template lwc:if={hasCerts}>
       <div class="slds-var-p-around_small">
         <template for:each={certs.data} for:item="cert">
           <div key={cert.Id} class="slds-var-m-vertical_x-small">
@@ -9,7 +9,12 @@
         </template>
       </div>
     </template>
-    <template if:false={hasCerts}>
+    <template lwc:elseif={hasError}>
+      <p class="slds-text-color_error slds-var-p-around_small">
+        Error loading certifications: {certs.error.body.message}
+      </p>
+    </template>
+    <template lwc:else>
       <p class="slds-text-body_small slds-var-p-around_small">No certifications found.</p>
     </template>
   </lightning-card>

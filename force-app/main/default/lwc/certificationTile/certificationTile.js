@@ -10,9 +10,14 @@ export default class CertificationTile extends LightningElement {
   }
 
   get hasCertData() {
-    return this.cert && 
-           this.cert.Id && 
-           this.cert.Exam_Name__c &&
-           this.cert.Issuing_Organization__r?.Name;
+    return this.cert && this.cert.Id && this.cert.Exam_Name__c;
+  }
+
+  get imageUrl() {
+    if (!this.cert) return '';
+    if (this.cert.Content_Key__c) {
+        return `/sfsites/c/cms/delivery/media/${this.cert.Content_Key__c}`;
+    }
+    return this.cert.Image_URL__c;
   }
 }

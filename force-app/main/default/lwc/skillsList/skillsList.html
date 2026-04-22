@@ -1,6 +1,6 @@
 <template>
   <lightning-card title="Skills Assessments" icon-name="standard:skill">
-    <template if:true={hasSkills}>
+    <template lwc:if={hasSkills}>
       <div class="slds-var-p-around_small">
         <template for:each={skills.data} for:item="skill">
           <div key={skill.Id} class="slds-var-m-vertical_x-small">
@@ -9,7 +9,12 @@
         </template>
       </div>
     </template>
-    <template if:false={hasSkills}>
+    <template lwc:elseif={hasError}>
+      <p class="slds-text-color_error slds-var-p-around_small">
+        Error loading skills: {skills.error.body.message}
+      </p>
+    </template>
+    <template lwc:else>
       <p class="slds-text-body_small slds-var-p-around_small">No skills assessments found.</p>
     </template>
   </lightning-card>
